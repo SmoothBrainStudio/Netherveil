@@ -1,3 +1,4 @@
+// Basic node, can be modified as required
 using UnityEngine;
 
 namespace DialogueSystem.Runtime
