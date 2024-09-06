@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5977202090705677322
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4624482567745166584}
+  - component: {fileID: 8318592974857264855}
+  - component: {fileID: 4094047892612973092}
+  m_Layer: 10
+  m_Name: PostProcessingEffectManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4624482567745166584
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977202090705677322}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8318592974857264855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977202090705677322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 086fe4bf52ad7654d8ea39ee28cefb82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  volume: {fileID: 0}
+  effectIsPlaying: 0
+  hitEffect:
+    profile: {fileID: 11400000, guid: d6a7cdb7fdde75f4cbc763138e522667, type: 2}
+    duration: 0.5
+  freezeEffect:
+    profile: {fileID: 11400000, guid: 67d2de24fbd82894e85f7e470e55d450, type: 2}
+    durationIn: 0.5
+    durationOut: 0.5
+  blessingEffect:
+    profile: {fileID: 11400000, guid: 862422afec703154c8e640cf12591c5e, type: 2}
+    durationIn: 1
+    durationWait: 0.1
+    durationOut: 0.15
+  electricityEffect:
+    profile: {fileID: 11400000, guid: 5a7e80c101ab43d408855121e66932a2, type: 2}
+    durationOut: 0.3
+  damnationEffect:
+    profile: {fileID: 11400000, guid: 880d503c40559d249a7e5e7671e208c2, type: 2}
+    durationIn: 0.2
+    durationOut: 0.2
+  bleedingEffect:
+    profile: {fileID: 11400000, guid: 761a73023557e7a4abb85c74ebf61811, type: 2}
+    durationOut: 0.2
+  poisonEffect:
+    profile: {fileID: 11400000, guid: 8ef13bb350d1f3347ad76685b5e3dc28, type: 2}
+    durationIn: 0.25
+    durationOut: 0.5
+  fireEffect:
+    profile: {fileID: 11400000, guid: 71cb97f943b612d4e92b870617e82b58, type: 2}
+    durationIn: 0.1
+    durationOut: 0.2
+--- !u!114 &4094047892612973092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5977202090705677322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6db7c59abc3a2994a8dcdab4b82ab63c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitEffect:
+    profile: {fileID: 11400000, guid: d6a7cdb7fdde75f4cbc763138e522667, type: 2}
+    duration: 1.1
+  volume: {fileID: 0}
+  effectIsPlaying: 0

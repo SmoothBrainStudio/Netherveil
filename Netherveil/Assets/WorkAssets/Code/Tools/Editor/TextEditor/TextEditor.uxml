@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/SampleSceneAssets/Code/Tools/Editor/TextEditor/TextEditor.uss?fileID=7433441132597879392&amp;guid=03e478a5f92802a40bba83a780e6ccf0&amp;type=3#TextEditor" />
+    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); display: flex;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 52px;">
+            <ui:Button display-tooltip-when-elided="true" name="AddColor" style="width: 32px; background-image: url(&apos;project://database/Assets/SampleSceneAssets/Art/VFX/VFX%20Alphas/Textures/star_outline.png?fileID=2800000&amp;guid=c649c32e9a435234583865c47cd51623&amp;type=3#star_outline&apos;); height: 32px;" />
+            <uie:ColorField value="RGBA(0.000, 1.000, 1.000, 1.000)" name="ColorPicker" style="position: absolute; top: 9px; left: 40px; width: 139px;" />
+        </ui:VisualElement>
+        <ui:TextField picking-mode="Ignore" value="filler text" multiline="true" name="Description" style="height: 144px; display: flex; overflow: hidden;" />
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: none;">
+            <ui:Label tabindex="-1" text="Preview" display-tooltip-when-elided="true" style="align-self: center;" />
+            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="Preview" style="background-color: rgba(255, 255, 255, 0); background-image: none; height: 150px; -unity-background-image-tint-color: rgb(56, 56, 56);" />
+            <ui:Button text="Save" display-tooltip-when-elided="true" name="Save" style="background-color: rgb(81, 192, 95);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

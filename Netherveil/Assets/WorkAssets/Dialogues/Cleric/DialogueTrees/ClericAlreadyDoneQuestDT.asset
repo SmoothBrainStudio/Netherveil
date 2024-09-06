@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d70125057260524b857b1a4e58dfb68, type: 3}
+  m_Name: ClericAlreadyDoneQuestDT
+  m_EditorClassIdentifier: 
+  root: {fileID: 1995011021210426648}
+  nodes:
+  - {fileID: 1995011021210426648}
+  - {fileID: 2140133198456066548}
+  currentNode: {fileID: 0}
+--- !u!114 &1995011021210426648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d03c4b7ab31864489ac955099dd5df0, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  GUID: e58324d7-55b4-45cd-ae66-a02148388f90
+  position: {x: 16, y: 16}
+  child: {fileID: 2140133198456066548}
+--- !u!114 &2140133198456066548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 2ae25f10-aee9-44db-986b-b35666efaf96
+  position: {x: 257, y: 15}
+  dialogueData: {fileID: 11400000, guid: ffea3a758e1b0884882d437cd8d6bf51, type: 2}
+  child: {fileID: 0}

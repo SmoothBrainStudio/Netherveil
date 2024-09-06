@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Plugins/DialogueSystem/Scripts/Editor/UIBuilder/DialogueDataEditor.uss?fileID=7433441132597879392&amp;guid=487b3271b8c3eec4386b7b722f48438e&amp;type=3#DialogueDataEditor" />
+    <uie:Toolbar>
+        <uie:ToolbarButton text="Save Asset" parse-escape-sequences="true" display-tooltip-when-elided="true" name="SaveAsset-button" />
+        <uie:ToolbarButton text="Load Asset" parse-escape-sequences="true" display-tooltip-when-elided="true" name="LoadAsset-button" />
+    </uie:Toolbar>
+    <ui:TextField picking-mode="Ignore" label="Name" value="Joe" name="Name-field" style="color: rgb(255, 255, 255); flex-grow: 0; flex-shrink: 0;" />
+    <ui:TextField picking-mode="Ignore" label="Dialogue" value="Lorem Ipsum" name="Dialogue-field" multiline="true" style="color: rgb(255, 255, 255); flex-grow: 0; flex-shrink: 0; white-space: normal; flex-direction: column; height: auto; flex-wrap: wrap; min-height: 120px;" />
+    <uie:ObjectField label="Illustration" type="UnityEngine.Sprite, UnityEngine.CoreModule" name="Illustration-field" style="color: rgb(255, 255, 255);" />
+</ui:UXML>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{73a555f9-1dc6-4f3c-85b9-85fae98334b0}">
+		<property name="name">
+			<value>InGame</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{ddf997a2-a6ac-4de1-b54c-752ef6fddbf7}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{c201383c-39cf-42bc-a232-e131a3ca63a8}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{65cdb552-8bc3-46f7-a20c-9afcb1b5b23e}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{ddf997a2-a6ac-4de1-b54c-752ef6fddbf7}">
+		<relationship name="effects">
+			<destination>{01105862-3a8b-4e3a-b8c7-b90f519ccbd1}</destination>
+			<destination>{d47505e3-d22b-4aac-9b45-23af0d16123e}</destination>
+			<destination>{72f65cb0-9ad8-4f06-b74e-4a76dd297568}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{c201383c-39cf-42bc-a232-e131a3ca63a8}" />
+	<object class="MixerBusFader" id="{01105862-3a8b-4e3a-b8c7-b90f519ccbd1}" />
+	<object class="SFXReverbEffect" id="{d47505e3-d22b-4aac-9b45-23af0d16123e}">
+		<property name="decayTime">
+			<value>2500</value>
+		</property>
+		<property name="lowShelfGain">
+			<value>2</value>
+		</property>
+		<property name="wetLevel">
+			<value>-8.5</value>
+		</property>
+	</object>
+	<object class="ThreeEQEffect" id="{72f65cb0-9ad8-4f06-b74e-4a76dd297568}">
+		<property name="lowGain">
+			<value>2</value>
+		</property>
+		<property name="midGain">
+			<value>-2</value>
+		</property>
+		<property name="highGain">
+			<value>1</value>
+		</property>
+		<property name="lowCrossover">
+			<value>560</value>
+		</property>
+	</object>
+</objects>

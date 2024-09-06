@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/SampleSceneAssets/Code/Tools/Editor/Item/ItemCreatorEditor.uss?fileID=7433441132597879392&amp;guid=c276c3fc2698724438a736928f43c12b&amp;type=3#ItemCreatorEditor" />
+    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" style="flex-grow: 1; align-self: stretch; justify-content: center; align-items: stretch; height: auto; overflow: visible; display: flex;">
+        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+                <uie:ObjectField label="Icon" type="UnityEngine.Texture, UnityEngine.CoreModule" name="Icon-Field" style="flex-direction: column; width: auto; height: auto; flex-grow: 1; flex-shrink: 1;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+                <ui:TextField picking-mode="Ignore" label="ID name" value="NewItem" tabindex="1" name="ID-Field" style="flex-direction: column;" />
+                <ui:IntegerField label="Price" value="0" tabindex="2" name="Price-Field" style="flex-direction: column;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+                <ui:EnumField label="Rarity" type="ItemData+Rarity, Assembly-CSharp" tabindex="3" name="Rarity-Field" style="flex-direction: column;" />
+                <ui:EnumField label="Type" type="ItemData+ItemType, Assembly-CSharp" name="Type-Field" tabindex="4" style="flex-direction: column;" />
+                <ui:FloatField label="Cooldown" value="0" name="Cooldown-Field" style="flex-direction: column; display: none;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column;">
+                <uie:ObjectField label="Mesh" type="UnityEngine.Mesh, UnityEngine.CoreModule" tabindex="5" name="Mesh-Field" style="flex-direction: column;" />
+                <uie:ObjectField label="Material" type="UnityEngine.Material, UnityEngine.CoreModule" tabindex="6" name="Material-Field" style="flex-direction: column;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:TextField picking-mode="Ignore" label="Description" value="Lorem Ipsum" multiline="true" password="false" is-delayed="false" hide-mobile-input="false" readonly="false" tabindex="7" name="Description-Field" style="flex-direction: column; max-height: none; min-height: 150px; flex-grow: 1; flex-shrink: 1; align-items: stretch; align-self: stretch; flex-basis: auto;" />
+        <ui:Button text="Save" display-tooltip-when-elided="true" tabindex="8" name="Save-Button" style="flex-grow: 0;" />
+    </ui:ScrollView>
+</ui:UXML>

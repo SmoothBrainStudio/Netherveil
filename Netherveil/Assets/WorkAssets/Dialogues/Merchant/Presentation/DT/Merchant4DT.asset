@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d70125057260524b857b1a4e58dfb68, type: 3}
+  m_Name: Merchant4DT
+  m_EditorClassIdentifier: 
+  root: {fileID: 5126188446813051599}
+  nodes:
+  - {fileID: 5126188446813051599}
+  - {fileID: 4209749558250573055}
+  currentNode: {fileID: 0}
+--- !u!114 &4209749558250573055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 0f0aae43-c9b7-4aee-8790-5f4e9214ebed
+  position: {x: 170, y: 31}
+  dialogueData: {fileID: 11400000, guid: 1ec5ca7e92ef6b641beb6f36230443a8, type: 2}
+  child: {fileID: 0}
+--- !u!114 &5126188446813051599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d03c4b7ab31864489ac955099dd5df0, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  GUID: 641349a5-db42-4249-aec1-b1eb66f263aa
+  position: {x: 24, y: 24}
+  child: {fileID: 4209749558250573055}

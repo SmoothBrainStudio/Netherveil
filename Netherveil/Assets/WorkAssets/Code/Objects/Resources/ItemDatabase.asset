@@ -1,0 +1,357 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4f95455b54f86d4cb72ad5d71baeb58, type: 3}
+  m_Name: ItemDatabase
+  m_EditorClassIdentifier: 
+  datas:
+  - RarityTier: 1
+    Type: 0
+    idName: BootOfSwiftness
+    mat: {fileID: 2100000, guid: 6891245a034cebe48b8863dc5b49c6a4, type: 2}
+    mesh: {fileID: 7498622929396125832, guid: b8f5915c35374e54ab1804fa46037f33, type: 3}
+    Description: Increases <color=#13B0D6FF>Speed</color> by <color=#13B0D6FF>{speedStat}</color>.
+    icon: {fileID: 2800000, guid: 90b92d32c4b9d7440bc6988920f4ff3d, type: 3}
+    isInGame: 1
+  - RarityTier: 1
+    Type: 0
+    idName: Bramble
+    mat: {fileID: 2100000, guid: 862a5adef088ca7438c0859811ea4cfb, type: 2}
+    mesh: {fileID: -2073750237196559940, guid: 37ef5cc9750a3bd4bb2e83d3b7f2f4ec, type: 3}
+    Description: Increases <color=#D30000FF>Attack</color> by <color=#D30000FF>{attackStat}</color>.
+    icon: {fileID: 2800000, guid: 19515ef592d805747adfc68a623a914a, type: 3}
+    isInGame: 1
+  - RarityTier: 1
+    Type: 0
+    idName: GoldEmeraldRing
+    mat: {fileID: 2100000, guid: 73bae35187e26de439777eb40674eff2, type: 2}
+    mesh: {fileID: -1264257387449459659, guid: 9b8d5d29b208a424aab91938720fb594, type: 3}
+    Description: "Increases <color=#0DBB3FFF>HP</color> by <color=#0DBB3FFF>{healthIncrease}</color>
+      and \n<color=#D30000FF>Attack</color> by <color=#D30000FF>{attackStat}</color>."
+    icon: {fileID: 2800000, guid: 878d519c752efdd45be854b5b8dcc610, type: 3}
+    isInGame: 1
+  - RarityTier: 0
+    Type: 0
+    idName: MonsterHeart
+    mat: {fileID: 2100000, guid: aa62e28809280bf41b1abcc35c953b51, type: 2}
+    mesh: {fileID: -8577907363957257371, guid: 90a681eefccc13245a4092e737eb8504, type: 3}
+    Description: Increases <color=#0DBB3FFF>HP</color> by <color=#0DBB3FFF>{maxLifeStat}</color>.
+    icon: {fileID: 2800000, guid: 9134c811f0d5c5848bb4e91d44113908, type: 3}
+    isInGame: 1
+  - RarityTier: 4
+    Type: 0
+    idName: RuneOfGluttony
+    mat: {fileID: 2100000, guid: 92e80d4bd5c222246bd8303052feb33c, type: 2}
+    mesh: {fileID: 782774230161756450, guid: ea9d53153a217f940a01efd8fb30a698, type: 3}
+    Description: <color=#DDB626FF>Doubles</color> the effectiveness of all <color=#0DBB3FFF>healing</color>.
+    icon: {fileID: 2800000, guid: 0d1c53f7228043947bb83f49965e57d7, type: 3}
+    isInGame: 1
+  - RarityTier: 4
+    Type: 0
+    idName: RuneOfPride
+    mat: {fileID: 2100000, guid: e5008f3004c08ad4caeb62ba5410afe7, type: 2}
+    mesh: {fileID: -2994113387958211023, guid: 35dc4b67d7fe53044bec57ec9468f0d8, type: 3}
+    Description: "Increases <color=#D30000FF>Attack</color> by <color=#D30000FF>{boostValue}</color>
+      when \n<color=#DDB626FF>killing</color> each ennemy in the current room \nwithin
+      a <color=#DDB626FF>limit</color> of <color=#DDB626FF>{MAX_BOOST}</color>."
+    icon: {fileID: 2800000, guid: 5f5e482354454e74c81b8fbb9abe03e5, type: 3}
+    isInGame: 1
+  - RarityTier: 3
+    Type: 0
+    idName: RuneOfWrath
+    mat: {fileID: 2100000, guid: f20e65c1de4290040a81444c43530aec, type: 2}
+    mesh: {fileID: -4075409018159138011, guid: 11c86a651e6b40f4b8236c80a4453b8b, type: 3}
+    Description: Increases <color=#D30000FF>Attack Coefficient</color> by <color=#D30000FF>{AttackCoeffStat}</color>.
+    icon: {fileID: 2800000, guid: 1414121b0e3ac5445811d66965ad2a88, type: 3}
+    isInGame: 1
+  - RarityTier: 1
+    Type: 0
+    idName: SilverAmethystRing
+    mat: {fileID: 2100000, guid: 3cccc4cc4a928ba4199e214425125f47, type: 2}
+    mesh: {fileID: -7251949149118512804, guid: a5a462d90359afa44a9309f5e490ff32, type: 3}
+    Description: "Increases <color=#0DBB3FFF>HP</color> by <color=#0DBB3FFF>{maxLifeStat}</color>
+      and \n<color=#13B0D6FF>Speed</color> by <color=#13B0D6FF>{speed}</color>."
+    icon: {fileID: 2800000, guid: b3590e39ffb73d542bfafa434d42a930, type: 3}
+    isInGame: 1
+  - RarityTier: 3
+    Type: 0
+    idName: VampireTooth
+    mat: {fileID: 2100000, guid: d905ddd77d4d8d1458b790a5a5bd2645, type: 2}
+    mesh: {fileID: 3969128520638321189, guid: 0e3b66627288fa94abd6c9c8396d831e, type: 3}
+    Description: <color=#0DBB3FFF>Heals {lifeStealStat}%</color> of <color=#DDB626FF>enemy's
+      MAX HP</color> when <color=#DDB626FF>killing</color> him.
+    icon: {fileID: 2800000, guid: 0ef9abc4fe9ac9f42908f61d596cef94, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: FireAmulet
+    mat: {fileID: 2100000, guid: bdc59ce4aa6655946b3a2dbd50abad89, type: 2}
+    mesh: {fileID: 4357191429178359799, guid: bc8342b7c9094724c8c4f367377d0209, type: 3}
+    Description: "Give <color=#DA6A0FFF>{fireChance}%</color> chance to <color=#DA6A0FFF>inflict</color>
+      fire effect \nfor <color=#DA6A0FFF>{fireDuration} seconds</color> when hitting
+      an enemy."
+    icon: {fileID: 2800000, guid: 4a9586ddbcbe1f343a7dbf1582b224aa, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: IceAmulet
+    mat: {fileID: 2100000, guid: 131a163353bd84549b51391e1e44747e, type: 2}
+    mesh: {fileID: 1906370811782387115, guid: d9d382f749d57fb498b35dd50f88cef1, type: 3}
+    Description: "Give <color=#148AB9FF>{iceChance}%</color> chance to inflict \n<color=#148AB9FF>freeze</color>
+      effect for <color=#148AB9FF>{iceDuration} seconds</color> \nwhen hitting an
+      enemy."
+    icon: {fileID: 2800000, guid: 9d18c00f94bfe4140ac13d709203e211, type: 3}
+    isInGame: 0
+  - RarityTier: 2
+    Type: 0
+    idName: KnockbackPiston
+    mat: {fileID: 2100000, guid: 5fd69a805223a174d8f2778971df8dbb, type: 2}
+    mesh: {fileID: 1122576570232901473, guid: 176f9ec07bbe241429dfd07e616d51d6, type: 3}
+    Description: <color=#DDB626FF>All attacks</color> now applies <color=#DDB626FF>knockback</color>.
+    icon: {fileID: 2800000, guid: f64fceac80bdb5b4d87faa224c644cb4, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 1
+    idName: ShockwaveBracelet
+    mat: {fileID: 2100000, guid: 317d6c1be7783fa4291f8fc1930c715a, type: 2}
+    mesh: {fileID: -7623934548880276570, guid: f5e9e45519084774faf33f21215bbb5f, type: 3}
+    Description: "On use, creates a <color=#DDB626FF>shockwave</color> all around
+      you that \n<color=#DDB626FF>knockbacks</color> enemies and deals <color=#DDB626FF>{AOE_DAMAGES}
+      \nAOE damages</color>.\n<color=#DDB626FF>Cooldown</color> : {displayValue}s."
+    icon: {fileID: 2800000, guid: 8b086f4a79a2a8d4d9dfef6246c7c8cc, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: TearOfZeus
+    mat: {fileID: 2100000, guid: 358b45f6ba0f23b45a709c429d058a96, type: 2}
+    mesh: {fileID: -2286393768362331847, guid: b5bcaab4fd2249947baa753fa47546a9, type: 3}
+    Description: "At the <color=#DDB626FF>end</color> of the <color=#DDB626FF>dash</color>,
+      \ncreates a <color=#DDB626FF>thunderstrike</color> that \ndeals <color=#DDB626FF>{AOE_DAMAGES}
+      AOE damages</color>."
+    icon: {fileID: 2800000, guid: 36cf1439704d56b44b6909bd62aa99bf, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: KnockbackShield
+    mat: {fileID: 2100000, guid: 2f89e6182e80d8b48aa6a3a7a6efced4, type: 2}
+    mesh: {fileID: 4903986322860439376, guid: 177689a9a7f37df4a94922cb0e31a0e3, type: 3}
+    Description: You become <color=#DDB626FF>insensible</color> to <color=#DDB626FF>knockbacks</color>.
+    icon: {fileID: 2800000, guid: 77696492ef41a9b478ab712698fd0205, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: LockPickingKit
+    mat: {fileID: 2100000, guid: 0c80b8afaba5e324f88af266be01938e, type: 2}
+    mesh: {fileID: -5038772529993653197, guid: 0287e9a5123876446ba92bbebfcc6067, type: 3}
+    Description: You now <color=#DDB626FF>don't trigger</color> any <color=#DDB626FF>trap</color>.
+    icon: {fileID: 2800000, guid: 88209d378c46df24b90e1680f90d187b, type: 3}
+    isInGame: 1
+  - RarityTier: 1
+    Type: 0
+    idName: ThornChest
+    mat: {fileID: 2100000, guid: 5f2d67c6fea387844860698ac492ce84, type: 2}
+    mesh: {fileID: -527459217806435988, guid: d3a97fb17dd8dc34bbd7d18d706817d9, type: 3}
+    Description: "<color=#DDB626FF>Sends back {thornPourcentage}% </color>of damages
+      \ninflicted to you to the <color=#DDB626FF>enemy that attacked you</color>."
+    icon: {fileID: 2800000, guid: abfbd68b9fb384d409b71dad5e1cbfe5, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: BloodLover
+    mat: {fileID: 2100000, guid: c9e8c4b235732a34c8448647873e383c, type: 2}
+    mesh: {fileID: 7701693846112250391, guid: 3d6042d163874de47b4099a70c4926fd, type: 3}
+    Description: "If you are <color=#DDB626FF>under {thresholdValue}% of HP</color>,
+      \nyou <color=#D30000FF>attack coefficient</color> is increased \nby <color=#DDB626FF>{coefValue}%</color>. "
+    icon: {fileID: 2800000, guid: 0784c1d29d6832743a02be03e9e36157, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: SneakyDagger
+    mat: {fileID: 2100000, guid: 82477033c3c70f242adffca172173a55, type: 2}
+    mesh: {fileID: 8638210781570703799, guid: 59e1f7735457e9c46bec6bfe872469c1, type: 3}
+    Description: "If you <color=#DDB626FF>attack enemies</color> on their <color=#DDB626FF>back</color>,
+      \nyou deal <color=#DDB626FF>{attackValue} extra damages</color>."
+    icon: {fileID: 2800000, guid: 60ae6f78874cbda44b349caaa5db368c, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: ReductionTicket
+    mat: {fileID: 2100000, guid: 7563cb9be1e24c3459cf03a081276bcb, type: 2}
+    mesh: {fileID: -2384404724758573017, guid: d86d9e248d1e65b42a5caf46d9e1550a, type: 3}
+    Description: <color=#DDB626FF>All items</color> in the <color=#DDB626FF>shop</color>
+      cost <color=#DDB626FF>{coefValue}%</color> less blood.
+    icon: {fileID: 2800000, guid: 485d3ba8bd08eac43bc58df04965530c, type: 3}
+    isInGame: 1
+  - RarityTier: 1
+    Type: 1
+    idName: Bomb
+    mat: {fileID: 2100000, guid: 593e24eee2183594183e0d4ee2c0f8af, type: 2}
+    mesh: {fileID: -7667776773611688273, guid: 1b17df2dad15d9c42aa7177e2d2de4ad, type: 3}
+    Description: "Throws a <color=#DDB626FF>bomb</color> that deals <color=#DDB626FF>{damages}\n
+      AOE damages</color>.\n<color=#DDB626FF>Cooldown</color> : {displayValue}s."
+    icon: {fileID: 2800000, guid: d8bba1dcfd8985843a198d481f258031, type: 3}
+    isInGame: 1
+  - RarityTier: 3
+    Type: 0
+    idName: UrnOfAvarice
+    mat: {fileID: 2100000, guid: a872d0094c09e1049b9a1c01f0d368f0, type: 2}
+    mesh: {fileID: -7344132296924054484, guid: 9dd07894a3065504db812776853d6d3e, type: 3}
+    Description: "increases the <color=#D30000FF>Attack Coefficient</color> by <color=#D30000FF>{bloodDamagesCoef}%</color>
+      \nfor each <color=#A80707FF>drop of blood</color> in your inventory,\nup to
+      <color=#D30000FF>{bloodDamagesMaxCoef}%</color>."
+    icon: {fileID: 2800000, guid: 37e0a0df7e849a845b86966f48143e42, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: SpearStrike
+    mat: {fileID: 2100000, guid: 41fa876c2e27f6748b39c721c4e9cb1c, type: 2}
+    mesh: {fileID: 7483551437148711314, guid: e802f425ced38484f8ad3013a49386c6, type: 3}
+    Description: "When the <color=#DDB626FF>spear throw</color> is <color=#DDB626FF>finished</color>,
+      \ncreates a <color=#DDB626FF>thunderstrike</color> at \nthe end position that
+      deals <color=#DDB626FF>{AOE_DAMAGES} \nAOE damages</color>."
+    icon: {fileID: 2800000, guid: a93ab264ad4af61488e9eb1be67447e3, type: 3}
+    isInGame: 1
+  - RarityTier: 3
+    Type: 0
+    idName: ThunderLink
+    mat: {fileID: 2100000, guid: 140f848ab720c894196a9e6b571b5aaa, type: 2}
+    mesh: {fileID: -6216161337685371546, guid: 084ab7933fe6f0945a7310ba134f2f5a, type: 3}
+    Description: "Creates a <color=#EDEE20FF>thunder link</color> between you \nand
+      the spear when thrown, \nif an enemy goes into the <color=#EDEE20FF>thunder
+      link</color>, \ndeals <color=#EDEE20FF>{displayDamages} damages</color> and
+      applies\nthe <color=#EDEE20FF>electricity</color> \nstatus effect with <color=#EDEE20FF>{chance}%</color>
+      \nchance for <color=#EDEE20FF>{duration} seconds</color>."
+    icon: {fileID: 2800000, guid: 8aaa2d9f99aa2bd4085217ef4743db3a, type: 3}
+    isInGame: 1
+  - RarityTier: 4
+    Type: 0
+    idName: RuneOfEnvy
+    mat: {fileID: 2100000, guid: c29a9135f646c7b44b550bd92848d671, type: 2}
+    mesh: {fileID: -6571592686640011856, guid: 052783dde63e0fa489490a1f41749d25, type: 3}
+    Description: "<color=#DDB626FF>Steals {stealPourcentage}%</color> of<color=#DDB626FF>
+      all enemies stats</color> in \nthe <color=#DDB626FF>current room</color>.\n(resets
+      between each room) "
+    icon: {fileID: 2800000, guid: 84211e3c612e383438af776540101363, type: 3}
+    isInGame: 1
+  - RarityTier: 3
+    Type: 0
+    idName: DragonScale
+    mat: {fileID: 2100000, guid: 5fc5f8f52e8d80e4c89cb4154feb7304, type: 2}
+    mesh: {fileID: 3942593636719010258, guid: fedd01e41105e8c429938f6adec280a3, type: 3}
+    Description: "Increases <color=#D30000FF>Attack Coef</color> by <color=#D30000FF>{coefValue}</color>
+      and <color=#0DBB3FFF>HP</color> \nby <color=#0DBB3FFF>{hpValue}</color>."
+    icon: {fileID: 2800000, guid: afc13e13e9627e145b8754577d8fa8b2, type: 3}
+    isInGame: 1
+  - RarityTier: 1
+    Type: 0
+    idName: TomeOfBenediction
+    mat: {fileID: 2100000, guid: 79353b43642804a419b6145991e01564, type: 2}
+    mesh: {fileID: 4920759279693624153, guid: ac34a8d0d6cf65a44b6285f1ab8b4000, type: 3}
+    Description: Increases <color=#DDB626FF>Benediction</color> by <color=#DDB626FF>{value}</color>.
+    icon: {fileID: 2800000, guid: b988151e0eb23f141af74a0a61bc79c8, type: 3}
+    isInGame: 1
+  - RarityTier: 1
+    Type: 0
+    idName: TomeOfCorruption
+    mat: {fileID: 2100000, guid: dca016ec2d9f01149b01f94edc315bcc, type: 2}
+    mesh: {fileID: -7034649327343061460, guid: b09035d5bf31bc4429466a429f227339, type: 3}
+    Description: 'Increases <color=#9E66C2FF>Corruption</color> by <color=#9E66C2FF>{value}</color>. '
+    icon: {fileID: 2800000, guid: 5f070d3b061d4b34cbd0d8c9e6680e22, type: 3}
+    isInGame: 1
+  - RarityTier: 4
+    Type: 0
+    idName: BelzebuthBelt
+    mat: {fileID: 2100000, guid: f1b1371430861614ba5e497a6bffff84, type: 2}
+    mesh: {fileID: 6210143313740262682, guid: d377ec977bfa9eb488a69a30a5798ea0, type: 3}
+    Description: "<color=#DDB626FF>Increases</color> all attacks\n<color=#DDB626FF>range</color>
+      by <color=#DDB626FF>{displayValue}%</color>.\n "
+    icon: {fileID: 2800000, guid: 4463c047b688feb4cb93dfcacae7eb64, type: 3}
+    isInGame: 1
+  - RarityTier: 3
+    Type: 1
+    idName: HornOfBarbatos
+    mat: {fileID: 2100000, guid: 760c01cd777d4af4aaa8e3a34567ef8a, type: 2}
+    mesh: {fileID: 7542493772481985111, guid: 21c02396ca7593245ba28f787292a87b, type: 3}
+    Description: "Increases <color=#DDB626FF>all stats</color> by <color=#DDB626FF>{increaseValue}%</color>
+      \nduring the room it has been activated. \n<color=#DDB626FF>Cooldown</color>
+      : {displayValue} room(s)."
+    icon: {fileID: 2800000, guid: 262aae84da9e8734da461fff289f5a24, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 1
+    idName: RuneOfSloth
+    mat: {fileID: 2100000, guid: 464686a9b0e35ed4386678139d22182d, type: 2}
+    mesh: {fileID: 8545094018403108975, guid: ff384f81ed6f2504ba8bb41e13ed7489, type: 3}
+    Description: 'Creates a <color=#148AB9FF>freeze zone</color> that applies <color=#148AB9FF>Freeze</color>
+      to all enemies hit for <color=#148AB9FF>{duration} seconds</color>.
+
+      <color=#DDB626FF>Cooldown</color>
+      : {displayValue}s.'
+    icon: {fileID: 2800000, guid: 44736a8823e431e4f86bffefb47eabdb, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: DashShield
+    mat: {fileID: 2100000, guid: 6c6ffab653cea364ca2eb4907994edc8, type: 2}
+    mesh: {fileID: 2110577044690227698, guid: 2810c87a80007264b98f7b66b5b6a867, type: 3}
+    Description: You become <color=#DDB626FF>invulnerable</color> and <color=#C9A628FF>reflects</color>
+      projectiles during the <color=#DDB626FF>dash attack</color>.
+    icon: {fileID: 2800000, guid: 5597979f272b07940bddd27fd2f85f36, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: PoisonAmulet
+    mat: {fileID: 2100000, guid: c945bab725ed21842b602c401acc9ae8, type: 2}
+    mesh: {fileID: -713889317513938099, guid: 17f8c7e450d72ad409fb9f3d87b492da, type: 3}
+    Description: "Give <color=#6FA822FF>{poisonChance}%</color> chance \nto inflict
+      <color=#6FA822FF>poison</color> effect for \n<color=#6FA822FF>{poisonDuration}
+      seconds</color> \nwhen hitting an enemy."
+    icon: {fileID: 2800000, guid: eb0d077314837024ea2dcdcd482c2233, type: 3}
+    isInGame: 1
+  - RarityTier: 3
+    Type: 0
+    idName: BloodCrown
+    mat: {fileID: 2100000, guid: aed59c80e91511d4098e69b25e01c77c, type: 2}
+    mesh: {fileID: -4368933104713082035, guid: 6f44fa5e4361edc46a0ca55b1a27ebdd, type: 3}
+    Description: <color=#DDB626FF>Doubles</color> the <color=#A80707FF>retrieved
+      blood</color> on enemies.
+    icon: {fileID: 2800000, guid: 8a4a383a57b56014bb45c914d92fae13, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: BleedingRing
+    mat: {fileID: 2100000, guid: da11857e8d766994184268fc67ebab19, type: 2}
+    mesh: {fileID: -2070606762286431843, guid: fbc7b1c2336aec0429889fb7fd260ae2, type: 3}
+    Description: "Give <color=#DDB626FF>{bleedingChance}%</color> chance \nto inflict
+      <color=#A80707FF>bleeding</color> effect for \n<color=#DDB626FF>{bleedingDuration}
+      seconds</color> \nwhen hitting an enemy. "
+    icon: {fileID: 2800000, guid: ef7f49920672df34f9d6c4d29c1267a9, type: 3}
+    isInGame: 1
+  - RarityTier: 3
+    Type: 0
+    idName: GhostlySpears
+    mat: {fileID: 2100000, guid: f259d1c3aded63a42b9e78650fff63e1, type: 2}
+    mesh: {fileID: 6378180631550868731, guid: b8e28db3bba689f45a3c8b12ea19ead4, type: 3}
+    Description: "When you launch your <color=#DDB626FF>spear</color>, \nit will
+      launch <color=#DDB626FF>2 additionnal ghosty spears</color> \nthat also <color=#DDB626FF>deals
+      damages</color>."
+    icon: {fileID: 2800000, guid: c083fe82873af2947b61e30d2135c448, type: 3}
+    isInGame: 1
+  - RarityTier: 2
+    Type: 0
+    idName: ThunderAmulet
+    mat: {fileID: 2100000, guid: a50d57d5dd0d89d40bfd7943891f9f2c, type: 2}
+    mesh: {fileID: -9188247637904873643, guid: fa6bf59916a9522488e2cf160675fa90, type: 3}
+    Description: "Give <color=#EDEE20FF>{electricityChance}%</color> chance \nto
+      inflict <color=#EDEE20FF>electricity</color> effect for \n<color=#EDEE20FF>{electricityDuration}
+      seconds</color> \nwhen hitting an enemy."
+    icon: {fileID: 2800000, guid: 577429dcc9040c944a3ff6dce63e0f38, type: 3}
+    isInGame: 0

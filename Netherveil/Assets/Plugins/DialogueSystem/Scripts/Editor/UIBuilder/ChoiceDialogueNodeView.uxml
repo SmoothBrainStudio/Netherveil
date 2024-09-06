@@ -1,0 +1,23 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Plugins/DialogueSystem/Scripts/Editor/UIBuilder/ChoiceDialogueNodeView.uss?fileID=7433441132597879392&amp;guid=12449798ef605da4894ed76f929691d2&amp;type=3#ChoiceDialogueNodeView" />
+    <ui:VisualElement name="node-border" style="flex-grow: 1; background-color: rgba(56, 56, 56, 0); max-width: 275px; max-height: none; width: auto; min-width: auto; flex-shrink: 1; align-items: stretch;">
+        <ui:VisualElement name="title" style="flex-grow: 0; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; flex-direction: row; justify-content: space-between;">
+            <ui:Label tabindex="-1" text="Lorem Ipsum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title-label" style="color: rgb(255, 255, 255); -unity-text-align: middle-left;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="contents" style="flex-grow: 1;">
+            <ui:VisualElement name="divider" style="flex-grow: 0; flex-basis: auto; flex-direction: column; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; background-color: rgb(37, 37, 37);" />
+            <ui:VisualElement name="top" style="flex-grow: 0; flex-basis: auto; flex-direction: row; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgb(56, 56, 56);">
+                <ui:VisualElement name="input" style="flex-grow: 0; flex-shrink: 0; padding-bottom: 4px; padding-top: 4px; background-color: rgb(57, 57, 57);" />
+                <ui:VisualElement name="divider" style="flex-grow: 0; flex-basis: auto; flex-direction: column; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; background-color: rgb(37, 37, 37);" />
+                <ui:VisualElement name="output-all" style="flex-grow: 1; background-color: rgb(43, 43, 43); flex-shrink: 0; flex-direction: column-reverse;">
+                    <ui:VisualElement name="output" style="flex-grow: 1; flex-shrink: 1; padding-bottom: 0; padding-top: 0; background-color: rgba(43, 43, 43, 0); flex-direction: column; padding-right: 0; padding-left: 0; justify-content: center;" />
+                    <ui:Button text="New Choice" parse-escape-sequences="true" display-tooltip-when-elided="true" name="button-new-choice" style="flex-grow: 0; padding-top: 2px; padding-right: 8px; padding-bottom: 2px; padding-left: 8px; background-color: rgb(88, 88, 88); color: rgb(222, 222, 222); border-left-color: rgb(48, 48, 48); border-right-color: rgb(48, 48, 48); border-top-color: rgb(48, 48, 48); border-bottom-color: rgb(48, 48, 48); align-items: auto; width: auto; flex-basis: auto; flex-direction: column; position: relative; -unity-text-align: middle-center; white-space: nowrap; text-overflow: clip;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="divider" style="flex-grow: 0; flex-basis: auto; flex-direction: column; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; background-color: rgb(37, 37, 37);" />
+            <ui:VisualElement name="bottom" style="flex-grow: 1; flex-basis: auto; flex-direction: column; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; background-color: rgb(57, 57, 57); align-self: auto;">
+                <uie:ObjectField label="Dialogue Data" type="DialogueSystem.Runtime.DialogueData, Assembly-CSharp-firstpass" name="DialogueData-field" style="color: rgb(255, 255, 255);" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

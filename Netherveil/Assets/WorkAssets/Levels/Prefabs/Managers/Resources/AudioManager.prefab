@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1481082026815275562
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 826426801441845622}
+  - component: {fileID: 3325598124055720955}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &826426801441845622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481082026815275562}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3325598124055720955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481082026815275562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f35ba243b899db8488967b63452c409f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questObtainedSFX:
+    Guid:
+      Data1: -454182861
+      Data2: 1332739825
+      Data3: 1542897545
+      Data4: -506507602
+    Path: event:/Effect/QuestObtained
+  questFinishedSFX:
+    Guid:
+      Data1: 733741937
+      Data2: 1321825072
+      Data3: 260562083
+      Data4: -286482106
+    Path: event:/Effect/QuestFinished
+  questLostSFX:
+    Guid:
+      Data1: -604936239
+      Data2: 1222630008
+      Data3: -182917699
+      Data4: 717321649
+    Path: event:/Effect/QuestLost
+  hornOfBarbatosSFX:
+    Guid:
+      Data1: 2022689027
+      Data2: 1304147684
+      Data3: 2103679626
+      Data4: -339130228
+    Path: event:/Effect/HornItem
+  pickUpCollectibleSFX:
+    Guid:
+      Data1: 1697437136
+      Data2: 1332912143
+      Data3: -1357399650
+      Data4: -385136550
+    Path: event:/Effect/TakeCollectible
+  pickUpItemSFX:
+    Guid:
+      Data1: 1697437136
+      Data2: 1332912143
+      Data3: -1357399650
+      Data4: -385136550
+    Path: event:/Effect/TakeCollectible
+  thunderstrikeSFX:
+    Guid:
+      Data1: -2052323007
+      Data2: 1269037312
+      Data3: 1395973054
+      Data4: 693056
+    Path: event:/Object/Thunder
+  thunderstrike2SFX:
+    Guid:
+      Data1: 744223550
+      Data2: 1138508643
+      Data3: 1605725096
+      Data4: 1357603084
+    Path: event:/Object/Thunder 2
+  thunderstrike3SFX:
+    Guid:
+      Data1: -1799862835
+      Data2: 1323374380
+      Data3: -326602600
+      Data4: 651857816
+    Path: event:/Object/Thunder 3
+  thunderlinkSFX:
+    Guid:
+      Data1: -511789259
+      Data2: 1315638869
+      Data3: 2082105790
+      Data4: 1364137951
+    Path: event:/Object/Zap
+  gateOpenSFX:
+    Guid:
+      Data1: 415568330
+      Data2: 1090478935
+      Data3: -463441731
+      Data4: 1509938564
+    Path: event:/Effect/Gate
+  gateCloseSFX:
+    Guid:
+      Data1: 489744487
+      Data2: 1267738079
+      Data3: -406456180
+      Data4: 246459704
+    Path: event:/Effect/GateClosure
+  allMyTearsMusic:
+    Guid:
+      Data1: -1575479352
+      Data2: 1194153009
+      Data3: -1300469838
+      Data4: -695876149
+    Path: event:/Musics/AllMyTearsNathan
+  itemBuySFX:
+    Guid:
+      Data1: 624206228
+      Data2: 1095677336
+      Data3: -1981373032
+      Data4: 923035672
+    Path: event:/Effect/BuyItem
+  damnationVeilSFX:
+    Guid:
+      Data1: -1322220494
+      Data2: 1274180803
+      Data3: -1075919690
+      Data4: -1485501481
+    Path: event:/Object/DamnationVeil
+  divineShieldSFX:
+    Guid:
+      Data1: 69314906
+      Data2: 1279963189
+      Data3: -715283025
+      Data4: -1341052894
+    Path: event:/Object/DivineShield
+  divineShieldLoopSFX:
+    Guid:
+      Data1: 3363167
+      Data2: 1112016155
+      Data3: 827612308
+      Data4: 937885417
+    Path: event:/Object/DivineShieldLoop
+  dashShieldSFX:
+    Guid:
+      Data1: -1054785745
+      Data2: 1081098335
+      Data3: -1049569128
+      Data4: -1423736755
+    Path: event:/Object/DashShield
+  thornChestSFX:
+    Guid:
+      Data1: 256508663
+      Data2: 1295399560
+      Data3: -398151754
+      Data4: -1701025241
+    Path: event:/Object/ThornChest
+  runeOfSlothSFX:
+    Guid:
+      Data1: -1455584437
+      Data2: 1216429938
+      Data3: 1472824468
+      Data4: 1143581929
+    Path: event:/Object/RuneOfSloth
+  runeOfEnvySFX:
+    Guid:
+      Data1: -1529193526
+      Data2: 1192914312
+      Data3: -579734366
+      Data4: 842507143
+    Path: event:/Object/RuneOfEnvy
+  runeOfPrideSFX:
+    Guid:
+      Data1: 72179369
+      Data2: 1096301879
+      Data3: -1927345222
+      Data4: -1753531012
+    Path: event:/Object/RuneOfPride
+  spawningSFX:
+    Guid:
+      Data1: -2018734213
+      Data2: 1218532637
+      Data3: 467194786
+      Data4: -115349823
+    Path: event:/Effect/SpawningEnnemy
+  notEnoughtBloodSFX:
+    Guid:
+      Data1: 2133184002
+      Data2: 1097579800
+      Data3: -762675579
+      Data4: -1198772999
+    Path: event:/Effect/NotEnoughtBlood
+  ezrealUltSFX:
+    Guid:
+      Data1: 2074912636
+      Data2: 1190161131
+      Data3: 2114346422
+      Data4: -183634348
+    Path: event:/Effect/EzrealUlt
+  aresBladeSFX:
+    Guid:
+      Data1: 1037754764
+      Data2: 1310085968
+      Data3: 152298115
+      Data4: 1599257875
+    Path: event:/Effect/AresBlade
+  reflectSFX:
+    Guid:
+      Data1: 1273604237
+      Data2: 1333102144
+      Data3: 879631256
+      Data4: -1257162166
+    Path: event:/Effect/ReflectFireBall
+  bombItemSFX:
+    Guid:
+      Data1: 397414228
+      Data2: 1236464128
+      Data3: -1869102192
+      Data4: 680025333
+    Path: event:/Object/BombeExplosionItem
+  deathVFXSFX:
+    Guid:
+      Data1: -995979362
+      Data2: 1265413916
+      Data3: 1384123
+      Data4: 1296152976
+    Path: event:/Effect/DeathVFX
+  buttonClick:
+    Guid:
+      Data1: -2135124846
+      Data2: 1245552825
+      Data3: 1393398181
+      Data4: 638296409
+    Path: event:/UI/ButtonClick
+  buttonSelect:
+    Guid:
+      Data1: -786275376
+      Data2: 1137791675
+      Data3: 1138186135
+      Data4: 727336048
+    Path: event:/UI/ButtonSelect

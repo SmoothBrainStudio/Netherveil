@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Plugins/Dialogs/Editor/Node/RootNode/RootNodeView.uss?fileID=7433441132597879392&amp;guid=0c61247f6b8676244b4c16f57cb018de&amp;type=3#RootNodeView" />
+    <ui:VisualElement name="node-border" style="flex-grow: 1; background-color: rgba(56, 56, 56, 0);">
+        <ui:VisualElement name="title" style="flex-grow: 0; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;">
+            <ui:Label tabindex="-1" text="Lorem Ipsum" parse-escape-sequences="true" display-tooltip-when-elided="true" name="title-label" style="color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+        <ui:VisualElement name="contents" style="flex-grow: 1;">
+            <ui:VisualElement name="divider" style="flex-grow: 0; flex-basis: auto; flex-direction: column; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; background-color: rgb(37, 37, 37);" />
+            <ui:VisualElement name="top" style="flex-grow: 0; flex-basis: auto; flex-direction: row; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: rgb(56, 56, 56);">
+                <ui:VisualElement name="input" style="flex-grow: 1; flex-shrink: 0; padding-bottom: 4px; padding-top: 4px; background-color: rgb(57, 57, 57);" />
+                <ui:VisualElement name="divider" style="flex-grow: 0; flex-basis: auto; flex-direction: column; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; background-color: rgb(37, 37, 37);" />
+                <ui:VisualElement name="output" style="flex-grow: 1; flex-shrink: 0; padding-bottom: 4px; padding-top: 4px; background-color: rgb(43, 43, 43); flex-direction: column;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="divider" style="flex-grow: 0; flex-basis: auto; flex-direction: column; padding-top: 1px; padding-right: 1px; padding-bottom: 1px; padding-left: 1px; background-color: rgb(37, 37, 37);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

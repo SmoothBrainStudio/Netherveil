@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6292098799687579091
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6959073015033754403}
+  - component: {fileID: 1875918393794336421}
+  m_Layer: 0
+  m_Name: MapResources
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6959073015033754403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6292098799687579091}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1875918393794336421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6292098799687579091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b038e3ca0a0204fa6850bebb4fab5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomsToLoad:
+  - {fileID: 6810481801945651200, guid: e14cc90d7c0732241b54b5ceb1b4ab5a, type: 3}
+  - {fileID: 3296634023868056251, guid: 0277e2113e5e5bf4490ead6328252977, type: 3}
+  - {fileID: 7135591297740866659, guid: 954e140b57a9dfa4481dc478a6edfaff, type: 3}
+  - {fileID: 3842280066834334739, guid: e802c6b63653c4845aa81824e2089f78, type: 3}
+  - {fileID: 3221706276323021389, guid: 755c8a4b8ca61d94ca2b8cae589bc15a, type: 3}
+  - {fileID: 5422939603247447398, guid: 9d590af624004eb4baf1a5c115247638, type: 3}
+  - {fileID: 6997484026888657186, guid: 364ddc65a18579148abb86b540f2c95a, type: 3}
+  - {fileID: 6259272533226197204, guid: a79b8b29e3ae94f40bc05f8b1c4390ce, type: 3}
+  - {fileID: 3221706276323021389, guid: 68f6b1b81b71b794aa6afff3a0b408ce, type: 3}
+  - {fileID: 1298888624250739751, guid: b5dca0eac592a2f4da7a2035f131eff4, type: 3}
+  - {fileID: 6850719115959290232, guid: 959c0c6291d031145b958ec305b0766a, type: 3}
+  - {fileID: 1566628214032055474, guid: 5ca0810d65b7de14cb072db90d618802, type: 3}
+  - {fileID: 6070131231916652488, guid: 0bb158dfb2dca42429270fa60a407bf0, type: 3}
+  - {fileID: 6070131231916652488, guid: b66aa0505eecb6d4d93ca0761d2bb052, type: 3}
+  - {fileID: 2195699092654710248, guid: 1817681f7ca24c64894467da08a9358e, type: 3}
+  - {fileID: 7338957567084600394, guid: c297dd6aa0cb8c14d8aa19c3dcbb559a, type: 3}
+  - {fileID: 5975876897436906764, guid: 5d9ddbe2dbc004249a26cc0ceedc1a9b, type: 3}
+  obstructionDoors:
+  - {fileID: 8088027454437622747, guid: 215825399a54bcc42a97d9aa2904fee1, type: 3}
+  - {fileID: 6449547905454529274, guid: d25d8585faaaedb43991be2c29f0f677, type: 3}
+  - {fileID: 4738738047247820088, guid: ac06ec69d90793f44923ff22a8de421e, type: 3}
+  stairsPrefabs:
+  - {fileID: 2400859820230787023, guid: b44d6f9928584304a969751808265cfa, type: 3}
+  gatePrefab: {fileID: 4623051617983351730, guid: e97d5a66f8ce7ba499538f682ec82d33,
+    type: 3}

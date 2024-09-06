@@ -1,0 +1,360 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7741688364414421852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 71d8a993-1057-48d8-8380-0fb2ff2d71e6
+  position: {x: 605, y: 282}
+  dialogueData: {fileID: 11400000, guid: ea21ce327321d9b46b3c2cb9702480d7, type: 2}
+  child: {fileID: 4265375430763853475}
+--- !u!114 &-6823264095544987386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: de1ce78d-7aa6-4b4e-a1b7-a37b88e96229
+  position: {x: 2476, y: 418}
+  dialogueData: {fileID: 11400000, guid: af03db8786c3ad84e90cae354adbdb5c, type: 2}
+  child: {fileID: 0}
+--- !u!114 &-3453803719683434605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 9a9bb249-e26c-483a-91ee-4503495a5c16
+  position: {x: 2088, y: 452}
+  dialogueData: {fileID: 11400000, guid: af03db8786c3ad84e90cae354adbdb5c, type: 2}
+  child: {fileID: 0}
+--- !u!114 &-3379732322750057324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346333fec61c90f43a021a83ddcaf270, type: 3}
+  m_Name: QuestDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 720c964f-6c88-4efb-837a-ba6297739b20
+  position: {x: 2476, y: -37}
+  dialogueData: {fileID: 11400000, guid: de4af11616c6ebd4b803e071c3cbc96d, type: 2}
+  child: {fileID: 0}
+  questTag: 
+  difficulty: 0
+--- !u!114 &-2971783623341156784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00801a837757b774cad08675f27e4427, type: 3}
+  m_Name: ChoiceDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: dcb2007c-96a5-491c-8800-3a16f4d707c6
+  position: {x: 607, y: -11}
+  dialogueData: {fileID: 11400000, guid: e2dfc19716cbae648a7ef123cca5932d, type: 2}
+  options:
+  - option: I don't know him that much...
+    child: {fileID: 8009166025583883739}
+  - option: He didn't made me invincible
+    child: {fileID: 2726545594492322866}
+  - option: I'd bet everything
+    child: {fileID: 4845424482889743270}
+  - option: Not enough, I changed my mind
+    child: {fileID: -2838345068641603857}
+--- !u!114 &-2838345068641603857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 35867a5c-fd4a-4262-bd14-ecc90592f0f2
+  position: {x: 994, y: 143}
+  dialogueData: {fileID: 11400000, guid: af03db8786c3ad84e90cae354adbdb5c, type: 2}
+  child: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d70125057260524b857b1a4e58dfb68, type: 3}
+  m_Name: ClericClassicDT
+  m_EditorClassIdentifier: 
+  root: {fileID: 5214342541354194850}
+  nodes:
+  - {fileID: 3983527513298420136}
+  - {fileID: 1928625327245839914}
+  - {fileID: 5214342541354194850}
+  - {fileID: 4265375430763853475}
+  - {fileID: -7741688364414421852}
+  - {fileID: 4845424482889743270}
+  - {fileID: 2726545594492322866}
+  - {fileID: 8009166025583883739}
+  - {fileID: -2838345068641603857}
+  - {fileID: -2971783623341156784}
+  - {fileID: 9177846472038387364}
+  - {fileID: -3453803719683434605}
+  - {fileID: 2770362033986009681}
+  - {fileID: 4982410071201457508}
+  - {fileID: -3379732322750057324}
+  - {fileID: -6823264095544987386}
+  - {fileID: 425001927607434799}
+  - {fileID: 4454149288800218894}
+  currentNode: {fileID: 0}
+--- !u!114 &425001927607434799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00801a837757b774cad08675f27e4427, type: 3}
+  m_Name: ChoiceDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 7637b83b-bcc6-438d-952a-df97764a3d1e
+  position: {x: 2089, y: 192}
+  dialogueData: {fileID: 11400000, guid: e2dfc19716cbae648a7ef123cca5932d, type: 2}
+  options:
+  - option: I don't know him that much...
+    child: {fileID: -3379732322750057324}
+  - option: He didn't made me invincible
+    child: {fileID: 4982410071201457508}
+  - option: I'd bet everything
+    child: {fileID: 2770362033986009681}
+  - option: Not enough, I changed my mind
+    child: {fileID: -6823264095544987386}
+--- !u!114 &1928625327245839914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00801a837757b774cad08675f27e4427, type: 3}
+  m_Name: ChoiceDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: fda7eea1-bfba-4dbb-8ca9-c0b66b26b721
+  position: {x: 157, y: 266}
+  dialogueData: {fileID: 11400000, guid: bc03eff137324514e8356acd300503f7, type: 2}
+  options:
+  - option: Of course, I'm here to help you
+    child: {fileID: -2971783623341156784}
+  - option: What do you want from me ?
+    child: {fileID: -7741688364414421852}
+  - option: Sorry I don't have enough time for this
+    child: {fileID: 3983527513298420136}
+--- !u!114 &2726545594492322866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346333fec61c90f43a021a83ddcaf270, type: 3}
+  m_Name: QuestDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 8326cffd-34ac-493f-8408-5744865d2b36
+  position: {x: 992, y: -157}
+  dialogueData: {fileID: 11400000, guid: de4af11616c6ebd4b803e071c3cbc96d, type: 2}
+  child: {fileID: 0}
+  questTag: 
+  difficulty: 1
+--- !u!114 &2770362033986009681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346333fec61c90f43a021a83ddcaf270, type: 3}
+  m_Name: QuestDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: ca742b08-a068-4b28-a9ab-c42bf000b643
+  position: {x: 2470, y: 255}
+  dialogueData: {fileID: 11400000, guid: de4af11616c6ebd4b803e071c3cbc96d, type: 2}
+  child: {fileID: 0}
+  questTag: 
+  difficulty: 2
+--- !u!114 &3983527513298420136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 1745cdea-0391-47a6-85ea-888ed60058e8
+  position: {x: 606, y: 469}
+  dialogueData: {fileID: 11400000, guid: af03db8786c3ad84e90cae354adbdb5c, type: 2}
+  child: {fileID: 0}
+--- !u!114 &4265375430763853475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: bc51862c-093b-42d2-a1d4-5e1f9df535c3
+  position: {x: 994, y: 280}
+  dialogueData: {fileID: 11400000, guid: bd26955c7bcc93f4a918206897b2dc2f, type: 2}
+  child: {fileID: 4454149288800218894}
+--- !u!114 &4454149288800218894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc74533ba5306bf48b9792e9176d940d, type: 3}
+  m_Name: SimpleDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 993aae76-c45e-422f-99ef-2496bf0ce57a
+  position: {x: 1344, y: 278}
+  dialogueData: {fileID: 11400000, guid: d0f15a62737f7c5448ef780715867452, type: 2}
+  child: {fileID: 9177846472038387364}
+--- !u!114 &4845424482889743270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346333fec61c90f43a021a83ddcaf270, type: 3}
+  m_Name: QuestDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: c8fa674c-c848-41f8-b343-30fc234796a8
+  position: {x: 993, y: -11}
+  dialogueData: {fileID: 11400000, guid: de4af11616c6ebd4b803e071c3cbc96d, type: 2}
+  child: {fileID: 0}
+  questTag: 
+  difficulty: 2
+--- !u!114 &4982410071201457508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346333fec61c90f43a021a83ddcaf270, type: 3}
+  m_Name: QuestDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 3422f6fa-56e3-4712-873c-d696ac279e48
+  position: {x: 2479, y: 113}
+  dialogueData: {fileID: 11400000, guid: de4af11616c6ebd4b803e071c3cbc96d, type: 2}
+  child: {fileID: 0}
+  questTag: 
+  difficulty: 1
+--- !u!114 &5214342541354194850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d03c4b7ab31864489ac955099dd5df0, type: 3}
+  m_Name: RootNode
+  m_EditorClassIdentifier: 
+  GUID: f562f3af-0217-4d30-be09-e1ba76cca47d
+  position: {x: -15, y: 267}
+  child: {fileID: 1928625327245839914}
+--- !u!114 &8009166025583883739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 346333fec61c90f43a021a83ddcaf270, type: 3}
+  m_Name: QuestDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 83d104ff-5807-4416-b692-18e4126282fb
+  position: {x: 992, y: -308}
+  dialogueData: {fileID: 11400000, guid: de4af11616c6ebd4b803e071c3cbc96d, type: 2}
+  child: {fileID: 0}
+  questTag: 
+  difficulty: 0
+--- !u!114 &9177846472038387364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00801a837757b774cad08675f27e4427, type: 3}
+  m_Name: ChoiceDialogueNode
+  m_EditorClassIdentifier: 
+  GUID: 7e0f8f25-ab6b-47dc-9eea-112808384411
+  position: {x: 1687, y: 272}
+  dialogueData: {fileID: 11400000, guid: 3b82f759ccaba124ca84931eaf68717c, type: 2}
+  options:
+  - option: I think I'm the one
+    child: {fileID: 425001927607434799}
+  - option: Nah that's to much for me sorry
+    child: {fileID: -3453803719683434605}

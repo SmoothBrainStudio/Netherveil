@@ -1,0 +1,524 @@
+fileFormatVersion: 2
+guid: 45cf9868b152e3b4090eef3d7129d38c
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: PLAYER_LAUNCH_BOMB
+      takeName: Take 001
+      internalID: 1827226128182048838
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: SKE_PLAYER(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: LOW
+      parentName: SKE_PLAYER(Clone)
+      position: {x: -0, y: 0, z: -0.00001111269}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Body_low
+      parentName: LOW
+      position: {x: 0.0000131309025, y: 0, z: 0.00020785572}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor
+      parentName: LOW
+      position: {x: -0, y: 0, z: 0.00019674303}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_HEAD
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_SHOULDER_R
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_SHOULDER_L
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_CHEST
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_ARM_R
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_ARM_L
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_ELBOW_R
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_ELBOW_L
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_AVANT_BRAS_R
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_AVANT_BRAS_L
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_HAND_R
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_HAND_L
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_PELVIS
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_LEG_R
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_LEG_L
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_GENOUILLERE_R
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_GENOUILLERE_L
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_JAMBIERE_R
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor_JAMBIERE_L
+      parentName: MESH_PLAYER_Armor
+      position: {x: -0, y: 0, z: -0.00018563034}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_PLAYER_Armor02_low
+      parentName: LOW
+      position: {x: -0, y: 0, z: 0.00001111269}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_WRIST_R
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_FINGER_L
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_WRIST_L
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_FINGER_R
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_LEG_R
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_PELVIS
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_SHOULDER_R
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_HEAD
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_SHOULDER_L
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_CHEST
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_LEG_L
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_CLAV_L1
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: MESH_Armor_2_CLAV_R1
+      parentName: MESH_PLAYER_Armor02_low
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: joint_ROOT_FinalPlayer
+      parentName: SKE_PLAYER(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_PELVIS
+      parentName: joint_ROOT_FinalPlayer
+      position: {x: -0, y: 0.010312958, z: 0.00008640403}
+      rotation: {x: 0.53281766, y: -0.46487132, z: -0.53281766, w: 0.46487132}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_HIP
+      parentName: J_PELVIS
+      position: {x: -0.0013054333, y: -0.000047563342, z: 0}
+      rotation: {x: 0, y: 0, z: 0.048325546, w: 0.9988316}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_ABS
+      parentName: J_HIP
+      position: {x: -0.00086281373, y: -1.5612511e-18, z: 0}
+      rotation: {x: 0, y: 0, z: 0.033741772, w: 0.9994306}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_CHEST_01
+      parentName: J_ABS
+      position: {x: -0.0017595576, y: -2.3852448e-18, z: 0}
+      rotation: {x: 0, y: 0, z: 0.021706313, w: 0.9997644}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_CHEST_02
+      parentName: J_CHEST_01
+      position: {x: -0.0013240634, y: -5.89806e-19, z: 0}
+      rotation: {x: 0, y: 0, z: 0.103019066, w: 0.9946794}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_CLAV_L
+      parentName: J_CHEST_02
+      position: {x: -0.0006553682, y: 0.0002853886, z: 0.0005437551}
+      rotation: {x: 0.71705985, y: 0.68974924, z: -0.07610622, w: 0.06541477}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_SHOULDER_L
+      parentName: J_CLAV_L
+      position: {x: -0.00066470384, y: -0.00003753003, z: -0.0011482333}
+      rotation: {x: -0.5246778, y: -0.46803153, z: -0.4664059, w: 0.536773}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_ELBOW_L
+      parentName: J_SHOULDER_L
+      position: {x: -0.0030994718, y: 1.040834e-18, z: -3.9845323e-18}
+      rotation: {x: -0.00019326803, y: -0.0048854495, z: -0.0018912104, w: 0.9999863}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_WRIST_L
+      parentName: J_ELBOW_L
+      position: {x: -0.0026296088, y: 4.1633362e-19, z: -3.179549e-18}
+      rotation: {x: -0.43532595, y: -0.4444813, z: -0.5200532, w: 0.58521146}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_INDEX_L_01
+      parentName: J_WRIST_L
+      position: {x: -0.000015119699, y: -0.0005637347, z: 0.00006826511}
+      rotation: {x: 0.47052655, y: 0.5282137, z: 0.5175315, w: 0.48141062}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_INDEX_L_02
+      parentName: J_INDEX_L_01
+      position: {x: -0.00040062508, y: 6.938894e-20, z: -4.1633362e-19}
+      rotation: {x: -8.666746e-34, y: -2.228769e-16, z: -0.003769625, w: 0.9999929}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_INDEX_L_03
+      parentName: J_INDEX_L_02
+      position: {x: -0.00043905503, y: -6.9388935e-19, z: 1.3877787e-19}
+      rotation: {x: -1.4663382e-32, y: -2.0857871e-16, z: 0.059883565, w: 0.99820536}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_THUMB_L_01
+      parentName: J_WRIST_L
+      position: {x: 0.00006472038, y: -0.000120614764, z: 0.0002528824}
+      rotation: {x: 0.56498724, y: 0.6598032, z: -0.17188779, w: 0.46465445}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_THUMB_L_02
+      parentName: J_THUMB_L_01
+      position: {x: -0.00031599536, y: 0.000029662853, z: 0.000030589228}
+      rotation: {x: -0.0367663, y: -0.061910897, z: 0.07915085, w: 0.99425876}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_THUMB_L_03
+      parentName: J_THUMB_L_02
+      position: {x: -0.0003036208, y: 0.000055222034, z: 0.00008029672}
+      rotation: {x: -2.7596107e-17, y: -1.1734713e-17, z: -0.00036889472, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_TWIST_WRIST_L
+      parentName: J_ELBOW_L
+      position: {x: -0.0012802498, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_NECK
+      parentName: J_CHEST_02
+      position: {x: -0.0015297551, y: -0.000030344128, z: 0}
+      rotation: {x: 0, y: 0, z: -0.3486461, w: 0.9372544}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_HEAD
+      parentName: J_NECK
+      position: {x: -0.00075979996, y: -1.110223e-18, z: 0}
+      rotation: {x: 0.59597087, y: -0.3805506, z: -0.59597087, w: -0.3805506}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_CLAV_R
+      parentName: J_CHEST_02
+      position: {x: -0.00065539544, y: 0.0002853947, z: -0.00054375496}
+      rotation: {x: 0.7106518, y: -0.6961668, z: -0.0684311, w: -0.075120136}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_SHOULDER_R
+      parentName: J_CLAV_R
+      position: {x: 0.0006647167, y: 0.00003747604, z: 0.0011482349}
+      rotation: {x: -0.50945634, y: -0.47650152, z: -0.4501678, w: 0.5574491}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_ELBOW_R
+      parentName: J_SHOULDER_R
+      position: {x: 0.0030994276, y: 0.0000000068185164, z: 0.000000010193163}
+      rotation: {x: -0.0017117853, y: -0.009651927, z: -0.0016447749, w: 0.99995065}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_WRIST_R
+      parentName: J_ELBOW_R
+      position: {x: 0.0026296126, y: 0.000000001318759, z: -0.0000000029987628}
+      rotation: {x: -0.34957948, y: -0.51553065, z: -0.53861755, w: 0.5673742}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_INDEX_R_01
+      parentName: J_WRIST_R
+      position: {x: 0.000015114752, y: 0.0005637226, z: -0.00006828043}
+      rotation: {x: 0.3984782, y: 0.5874165, z: 0.5421611, w: 0.449687}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_INDEX_R_02
+      parentName: J_INDEX_R_01
+      position: {x: 0.00040062357, y: -7.120467e-10, z: -0.0000000024835083}
+      rotation: {x: -1.1074176e-33, y: 1.2880413e-16, z: -0.003769625, w: 0.9999929}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_INDEX_R_03
+      parentName: J_INDEX_R_02
+      position: {x: 0.00043904822, y: -1.2822444e-11, z: 0.00000000787839}
+      rotation: {x: -2.7011494e-32, y: 1.4532706e-16, z: 0.059883565, w: 0.99820536}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_THUMB_R_01
+      parentName: J_WRIST_R
+      position: {x: -0.00006472963, y: 0.00012064104, z: -0.0002528846}
+      rotation: {x: 0.2107153, y: 0.6749132, z: 0.32308227, w: 0.6290541}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_THUMB_R_02
+      parentName: J_THUMB_R_01
+      position: {x: 0.00031596507, y: -0.000029694444, z: -0.00003059}
+      rotation: {x: -0.036781993, y: -0.06191379, z: 0.07909829, w: 0.99426216}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_THUMB_R_03
+      parentName: J_THUMB_R_02
+      position: {x: 0.00030362033, y: -0.000055222077, z: -0.0000803}
+      rotation: {x: 1.6550962e-35, y: -6.1477784e-17, z: -0.00036889472, w: 0.99999994}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_TWIST_WRIST_R
+      parentName: J_ELBOW_R
+      position: {x: 0.0012802726, y: 0.000000006061844, z: -0.000000006008541}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_LEG_L
+      parentName: J_HIP
+      position: {x: 0.00005975661, y: -0.00020577386, z: 0.0010006092}
+      rotation: {x: -0.027042352, y: 0.99486, z: -0.09756243, w: -0.001967813}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_KNEE_L
+      parentName: J_LEG_L
+      position: {x: -0.004417129, y: 0.0000014931707, z: -0.00036837367}
+      rotation: {x: 0.00000839397, y: -0.000022782566, z: 0.04775753, w: 0.998859}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_ANKLE_L
+      parentName: J_KNEE_L
+      position: {x: -0.0058481866, y: 0.00000031727242, z: -0.0003739863}
+      rotation: {x: -0.09655748, y: -0.014162854, z: -0.19194184, w: 0.97654206}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_TOE_L
+      parentName: J_ANKLE_L
+      position: {x: -0.0010218491, y: 1.3791051e-18, z: 0}
+      rotation: {x: 0.0000000043064268, y: -0.00000000315026, z: -0.5904143, w: 0.80710036}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_END_L
+      parentName: J_TOE_L
+      position: {x: -0.0009443995, y: 5.941428e-19, z: 2.7755575e-19}
+      rotation: {x: -6.123234e-17, y: 1, z: 6.123234e-17, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_LEG_R
+      parentName: J_HIP
+      position: {x: 0.000059801354, y: -0.00020577208, z: -0.00100061}
+      rotation: {x: 0.9948551, y: 0.027122486, z: 0.0019589057, w: -0.09759034}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_KNEE_R
+      parentName: J_LEG_R
+      position: {x: 0.004417083, y: -0.0000014941392, z: 0.00036837}
+      rotation: {x: -2.8811076e-10, y: 7.917743e-10, z: 0.04787151, w: 0.9988535}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_ANKLE_R
+      parentName: J_KNEE_R
+      position: {x: 0.005848265, y: -3.8066278e-10, z: 0.0003739}
+      rotation: {x: -0.09657633, y: -0.01416772, z: -0.19197637, w: 0.97653335}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_TOE_R
+      parentName: J_ANKLE_R
+      position: {x: 0.0010218491, y: -5.5766433e-11, z: 2.7755575e-19}
+      rotation: {x: 0.0000000025910913, y: -0.0000000018954485, z: -0.5904143, w: 0.80710036}
+      scale: {x: 1, y: 1, z: 1}
+    - name: J_END_R
+      parentName: J_TOE_R
+      position: {x: 0.00094439555, y: -1.5829351e-18, z: 0}
+      rotation: {x: -6.123234e-17, y: 1, z: -0.000000007450581, w: -6.123234e-17}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 6a08537d0a2ae7a498650e023286d2a9,
+    type: 3}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 2
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
