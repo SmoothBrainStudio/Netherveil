@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class ThornChest : ItemEffect, IPassiveItem
 {
     readonly float thornPourcentage = 0.15f;

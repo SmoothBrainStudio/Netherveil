@@ -1,5 +1,5 @@
-using UnityEngine; 
- 
+using UnityEngine;
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class UrnOfAvarice : ItemEffect , IPassiveItem 
 {
     readonly float bloodDamagesCoef = 0.005f;

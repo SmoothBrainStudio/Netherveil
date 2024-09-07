@@ -1,5 +1,5 @@
-using UnityEngine; 
- 
+using UnityEngine;
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class BleedingRing : ItemEffect, IPassiveItem 
 {
     private readonly float bleedingChance = 0.1f;

@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class BootOfSwiftness : ItemEffect, IPassiveItem
 {
     private readonly float speedStat = 1.5f;
@@ -14,9 +14,5 @@ public class BootOfSwiftness : ItemEffect, IPassiveItem
     {
         Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
         player.Stats.IncreaseValue(Stat.SPEED, speedStat, false);
-        //RarityTier = Rarity.RARE;
-        //Name = "<color=\"blue\">Boots of Swiftness";
-        //Description = "Heightens player speed, granting swift agility to outpace challenges in the blink of an eye.\n" +
-        //    "<color=\"green\">Speed: +" + speedStat.ToString();
     }
 }

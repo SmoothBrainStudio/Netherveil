@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class AttackBehaviour : StateMachineBehaviour
 {
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state

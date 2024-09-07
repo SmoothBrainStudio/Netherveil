@@ -2,6 +2,7 @@ using FMOD.Studio;
 using System.Collections;
 using UnityEngine;
 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class DivineShield : ISpecialAbility
 {
     public float Cooldown { get; set; } = 30f;

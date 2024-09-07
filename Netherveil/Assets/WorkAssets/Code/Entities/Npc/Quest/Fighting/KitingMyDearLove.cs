@@ -1,5 +1,4 @@
-using System.IO;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class KitingMyDearLove : Quest 
 {
     int currentNumber = 0;

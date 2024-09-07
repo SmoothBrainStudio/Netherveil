@@ -2,6 +2,7 @@ using PostProcessingEffects;
 using UnityEngine;
 using UnityEngine.VFX;
 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class EzrealAttack : Projectile
 {
     [SerializeField] VisualEffect effect;

@@ -1,5 +1,6 @@
 using DialogueSystem.Runtime;
 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class QuestTalkerApprentice : QuestTalker
 {
     protected override void StartDialogue()

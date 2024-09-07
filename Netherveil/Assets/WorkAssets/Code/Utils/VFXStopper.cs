@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.VFX;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class VFXStopper : MonoBehaviour
 {
     [SerializeField] VisualEffect effect;

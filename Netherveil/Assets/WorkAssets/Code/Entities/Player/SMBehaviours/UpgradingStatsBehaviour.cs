@@ -1,6 +1,5 @@
 using UnityEngine;
-using UnityEngine.Video;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class UpgradingStatsBehaviour : StateMachineBehaviour
 {
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state

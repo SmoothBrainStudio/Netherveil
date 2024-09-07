@@ -6,6 +6,7 @@ using System.Reflection;
 using UnityEngine;
 using static QuestTalker;
 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public abstract class Quest : ISavable
 {
     public enum QuestDifficulty

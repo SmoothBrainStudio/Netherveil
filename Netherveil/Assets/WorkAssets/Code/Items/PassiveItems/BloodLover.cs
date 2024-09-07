@@ -2,7 +2,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.VFX;
 using UnityEngine.VFX.Utility;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class BloodLover : ItemEffect , IPassiveItem 
 {
     readonly float thresholdValue = 0.25f;

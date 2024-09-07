@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class SettingsManager : MonoBehaviour
 {
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.VFX;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class GhostlySpears : ItemEffect , IPassiveItem 
 {
     readonly List<GameObject> ghostSpears = new();

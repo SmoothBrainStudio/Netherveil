@@ -10,6 +10,8 @@ using Unity.VisualScripting;
 using UnityEditor;
 #endif
 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
+
 public class PlayerController : MonoBehaviour
 {
     Hero hero;
@@ -54,6 +56,8 @@ public class PlayerController : MonoBehaviour
     public int ComboCount { get; set; } = 0;
     public readonly int MAX_COMBO_COUNT = 3;
     public readonly int CHARGED_ATTACK_KNOCKBACK_COEFF = 3;
+
+    //damage getters
     public int FINISHER_DAMAGES 
     { 
         get 

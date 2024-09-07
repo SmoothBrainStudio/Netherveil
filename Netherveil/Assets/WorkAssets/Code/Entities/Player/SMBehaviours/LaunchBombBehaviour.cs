@@ -1,7 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class LaunchBombBehaviour : StateMachineBehaviour
 {
     [SerializeField] float timeToLaunch = 0.7f;

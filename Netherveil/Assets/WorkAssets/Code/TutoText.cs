@@ -4,7 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.DualShock;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class TutoText : MonoBehaviour
 {
     [SerializeField] List<InputActionReference> keyboardActions;

@@ -1,3 +1,4 @@
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class BeastHunter : Quest
 {
     int currentNumber = 0;

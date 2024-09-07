@@ -1,15 +1,14 @@
-using UnityEngine; 
- 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class LockPickingKit : ItemEffect , IPassiveItem 
 { 
     public void OnRetrieved() 
     {
-        GameObject.FindWithTag("Player").GetComponent<Hero>().canTriggerTraps = false; 
+        Utilities.Hero.canTriggerTraps = false; 
     } 
  
     public void OnRemove() 
     {
-        GameObject.FindWithTag("Player").GetComponent<Hero>().canTriggerTraps = true;
+        Utilities.Hero.canTriggerTraps = true;
     } 
  
 } 

@@ -2,6 +2,7 @@ using DialogueSystem.Runtime;
 using Map.Generation;
 using UnityEngine;
 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class QuestTalker : Npc
 {
     [Header("Talker parameters")]

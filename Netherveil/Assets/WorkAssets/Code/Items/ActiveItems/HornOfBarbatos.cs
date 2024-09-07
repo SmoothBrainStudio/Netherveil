@@ -1,7 +1,7 @@
 using Map;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class HornOfBarbatos : ItemEffect, IActiveItem
 {
     private IActiveItem activeItem { get => this; }

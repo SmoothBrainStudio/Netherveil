@@ -7,6 +7,9 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Video;
 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
+
+
 public class Hero : Entity, IDamageable, IAttacker, IBlastable, ISavable
 {
     public enum PlayerState : int

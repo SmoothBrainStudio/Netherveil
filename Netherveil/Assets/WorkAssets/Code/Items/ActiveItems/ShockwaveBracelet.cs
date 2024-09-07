@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class ShockwaveBracelet : ItemEffect, IActiveItem
 {
     public float Cooldown { get; set; } = 20f;

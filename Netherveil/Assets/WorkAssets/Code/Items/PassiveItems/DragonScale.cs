@@ -1,5 +1,5 @@
-using UnityEngine; 
- 
+using UnityEngine;
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class DragonScale : ItemEffect , IPassiveItem 
 {
     readonly float coefValue = 0.2f;

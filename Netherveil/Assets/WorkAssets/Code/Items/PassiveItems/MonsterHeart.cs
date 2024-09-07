@@ -1,19 +1,17 @@
-using UnityEngine;
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class MonsterHeart : ItemEffect, IPassiveItem
 {
     private readonly int maxLifeStat = 10;
 
     public void OnRemove()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
-        player.Stats.DecreaseMaxValue(Stat.HP, maxLifeStat);
-        player.Stats.DecreaseValue(Stat.HP, maxLifeStat, true);
+        Utilities.Hero.Stats.DecreaseMaxValue(Stat.HP, maxLifeStat);
+        Utilities.Hero.Stats.DecreaseValue(Stat.HP, maxLifeStat, true);
     }
 
     public void OnRetrieved()  
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
-        player.Stats.IncreaseMaxValue(Stat.HP, maxLifeStat);
-        player.Stats.IncreaseValue(Stat.HP, maxLifeStat, true);
+        Utilities.Hero.Stats.IncreaseMaxValue(Stat.HP, maxLifeStat);
+        Utilities.Hero.Stats.IncreaseValue(Stat.HP, maxLifeStat, true);
     }
 }

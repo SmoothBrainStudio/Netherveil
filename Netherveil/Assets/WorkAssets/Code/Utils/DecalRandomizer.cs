@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 [ExecuteInEditMode]
 public class DecalRandomizer : MonoBehaviour
 {

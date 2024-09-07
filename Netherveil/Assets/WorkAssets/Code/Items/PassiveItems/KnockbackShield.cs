@@ -1,15 +1,14 @@
-using UnityEngine; 
- 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class KnockbackShield : ItemEffect , IPassiveItem 
 { 
     public void OnRetrieved() 
     {
-        GameObject.FindWithTag("Player").GetComponent<Hero>().IsKnockbackable = false;
+        Utilities.Hero.IsKnockbackable = false;
     } 
  
     public void OnRemove() 
     {
-        GameObject.FindWithTag("Player").GetComponent<Hero>().IsKnockbackable = true;
+        Utilities.Hero.IsKnockbackable = true;
     } 
  
 } 

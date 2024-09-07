@@ -1,5 +1,4 @@
-using System.IO;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class VulcanHunter : Quest
 {
     int currentNumber = 0;

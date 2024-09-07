@@ -1,6 +1,6 @@
 using System.Linq;
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class RuneOfSloth : ItemEffect, IActiveItem
 {
     public float Cooldown { get; set; } = 30f;

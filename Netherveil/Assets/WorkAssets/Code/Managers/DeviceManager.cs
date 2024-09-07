@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.DualShock;
 using UnityEngine.InputSystem.LowLevel;
 using UnityEngine.InputSystem.XInput;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class DeviceManager : MonoBehaviour
 {
     [SerializeField] TMP_Text debugText;

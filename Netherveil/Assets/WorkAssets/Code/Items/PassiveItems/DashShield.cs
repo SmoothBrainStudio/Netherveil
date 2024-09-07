@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine; 
- 
+using UnityEngine;
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class DashShield : ItemEffect , IPassiveItem 
 {
     private bool hasShield = false;

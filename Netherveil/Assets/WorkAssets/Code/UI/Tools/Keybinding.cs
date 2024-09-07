@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using static UnityEngine.InputSystem.InputBinding;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class Keybinding : MonoBehaviour
 {
     [SerializeField] InputActionAsset playerInput;

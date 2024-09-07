@@ -1,7 +1,6 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.VFX;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class SpearStrike : ItemEffect , IPassiveItem 
 {
     readonly int AOE_DAMAGES = 10;

@@ -8,6 +8,8 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Controls;
 using UnityEngine.VFX;
 
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
+
 [RequireComponent(typeof(PlayerController))]
 public class PlayerInput : MonoBehaviour
 {
