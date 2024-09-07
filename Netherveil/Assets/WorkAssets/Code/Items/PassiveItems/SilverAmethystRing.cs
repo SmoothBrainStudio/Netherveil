@@ -1,5 +1,5 @@
 using UnityEngine;
-
+//Copyright 2024 Property of Olivier Maurin.All rights reserved.
 public class SilverAmethystRing : ItemEffect, IPassiveItem
 {
     private readonly int maxLifeStat = 25;
