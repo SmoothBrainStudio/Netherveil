@@ -11,8 +11,8 @@ public class GhostlySpears : ItemEffect , IPassiveItem
     public void OnRetrieved() 
     {
         //used a wrapper instead of the object itself to make it rotate from player's position, not the middle of the collide
-        GameObject spearThrowWrapper = GameObject.FindWithTag("Player").GetComponent<PlayerController>().SpearThrowWrapper;
-        GameObject spearVFX = GameObject.FindWithTag("Player").GetComponent<PlayerController>().SpearLaunchVFX.gameObject;
+        GameObject spearThrowWrapper = Utilities.PlayerController.SpearThrowWrapper;
+        GameObject spearVFX = Utilities.PlayerController.SpearLaunchVFX.gameObject;
 
         for(int i = 0; i< 2; ++i)
         {
@@ -47,8 +47,8 @@ public class GhostlySpears : ItemEffect , IPassiveItem
 
     private void ThrowGhostlySpears(Vector3 posToReach)
     {
-        GameObject spear = GameObject.FindWithTag("Player").GetComponent<PlayerController>().Spear.gameObject;
-        PlayerController player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
+        GameObject spear = Utilities.PlayerController.Spear.gameObject;
+        PlayerController player = Utilities.PlayerController;
 
         for (int i = 0; i< spearThrowWrappers.Count; ++i)
         {

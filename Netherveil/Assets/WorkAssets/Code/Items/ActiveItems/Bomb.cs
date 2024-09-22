@@ -20,11 +20,11 @@ public class Bomb : ItemEffect, IActiveItem
 
     public void Activate()
     {
-        GameObject player = Utilities.Player;
-        player.GetComponent<PlayerController>().PlayLaunchBombAnim();
-        player.GetComponent<PlayerController>().RotatePlayerToDeviceAndMargin();
+        PlayerController player = Utilities.PlayerController;
+        player.PlayLaunchBombAnim();
+        player.RotatePlayerToDeviceAndMargin();
 
-        CoroutineManager.Instance.StartCoroutine(WaitLaunch(player));
+        CoroutineManager.Instance.StartCoroutine(WaitLaunch(player.gameObject));
     }
 
     private IEnumerator WaitLaunch(GameObject player)

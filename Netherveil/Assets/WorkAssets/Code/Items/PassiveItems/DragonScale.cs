@@ -7,7 +7,7 @@ public class DragonScale : ItemEffect , IPassiveItem
 
     public void OnRetrieved() 
     { 
-        Hero hero = GameObject.FindWithTag("Player").GetComponent<Hero>();
+        Hero hero = Utilities.Hero;
         hero.Stats.IncreaseCoeffValue(Stat.ATK, coefValue);
         hero.Stats.IncreaseMaxValue(Stat.HP, hpValue);
         hero.Stats.IncreaseValue(Stat.HP, hpValue);
@@ -19,7 +19,7 @@ public class DragonScale : ItemEffect , IPassiveItem
  
     public void OnRemove() 
     {
-        Hero hero = GameObject.FindWithTag("Player").GetComponent<Hero>();
+        Hero hero = Utilities.Hero;
         hero.Stats.DecreaseCoeffValue(Stat.ATK, coefValue);
         hero.Stats.DecreaseMaxValue(Stat.HP, hpValue);
         hero.Stats.DecreaseValue(Stat.HP, hpValue);

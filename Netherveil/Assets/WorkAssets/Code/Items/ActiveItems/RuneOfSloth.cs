@@ -17,8 +17,8 @@ public class RuneOfSloth : ItemEffect, IActiveItem
 
     public void Activate()
     {
-        AudioManager.Instance.PlaySound(AudioManager.Instance.RuneOfSlothSFX,Utilities.Player.transform.position);
-        Utilities.Player.GetComponent<PlayerController>().PlayVFXAtPlayerPos(Utilities.Player.GetComponent<PlayerController>().RuneOfSlothVFX);
+        AudioManager.Instance.PlaySound(AudioManager.Instance.RuneOfSlothSFX, Utilities.Player.transform.position);
+        Utilities.PlayerController.PlayVFXAtPlayerPos(Utilities.Player.GetComponent<PlayerController>().RuneOfSlothVFX);
         float planeLength = 5f;
         float radius = (Utilities.Player.GetComponent<PlayerController>().RuneOfSlothVFX.GetFloat("Diameter") * planeLength) / 2f;
 
@@ -34,10 +34,10 @@ public class RuneOfSloth : ItemEffect, IActiveItem
 
     public void OnRetrieved()
     {
-        
+
     }
 
     public void OnRemove()
     {
     }
-} 
+}

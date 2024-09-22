@@ -82,10 +82,9 @@ public class ThunderLink : ItemEffect, IPassiveItem
     private void WaitAllSpearsSpawned(Spear spear)
     {
         allSpearsSet = true;
-        if (thunderlinkRoutine == null)
-            thunderlinkRoutine = CoroutineManager.Instance.StartCoroutine(TriggerElectricLinks());
-        if (moveRoutine == null)
-            moveRoutine = CoroutineManager.Instance.StartCoroutine(MoveThunderLink());
+        //??= means "if ... == null, assigns this"
+        thunderlinkRoutine ??= CoroutineManager.Instance.StartCoroutine(TriggerElectricLinks());
+        moveRoutine ??= CoroutineManager.Instance.StartCoroutine(MoveThunderLink());
     }
 
     private IEnumerator TriggerElectricLinks()

@@ -31,16 +31,6 @@ public class CoroutineManager : MonoBehaviour
         }
     }
 
-    public void StartCustom(IEnumerator _coroutine)
-    {
-        StartCoroutine(_coroutine);
-    }
-
-    public void StopCustom(IEnumerator _coroutine)
-    {
-        StopCoroutine(_coroutine);
-    }
-
     public static void StopAllCoroutinesInstance()
     {
         if (instance != null)

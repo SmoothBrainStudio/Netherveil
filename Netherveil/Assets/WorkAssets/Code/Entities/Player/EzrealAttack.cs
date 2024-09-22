@@ -1,4 +1,3 @@
-using PostProcessingEffects;
 using UnityEngine;
 using UnityEngine.VFX;
 

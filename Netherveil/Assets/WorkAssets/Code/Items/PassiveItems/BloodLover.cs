@@ -30,7 +30,7 @@ public class BloodLover : ItemEffect , IPassiveItem
         if (stat != Stat.HP)
             return;
 
-        Hero hero = GameObject.FindWithTag("Player").GetComponent<Hero>();
+        Hero hero = Utilities.Hero;
         if(hero.Stats.GetValue(Stat.HP)/ hero.Stats.GetMaxValue(Stat.HP) <= thresholdValue && !alreadyApplied)
         {
             hero.Stats.IncreaseCoeffValue(Stat.ATK, coefValue);

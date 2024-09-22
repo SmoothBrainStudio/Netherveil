@@ -62,7 +62,7 @@ public class TestOfEndurance : Quest
         if (!IsQuestFinished() && !questLost)
         {
             currentSurvivedRoom++;
-            progressText = $"DON'T FALL UNDER 25% HP DURING {NB_ROOM_SURVIVING} FIGHT ROOMS : {currentSurvivedRoom}/{NB_ROOM_SURVIVING}";
+            progressText = $"DON'T FALL UNDER {HP_PERCENTAGE_THRESHOLD * 100}% HP DURING {NB_ROOM_SURVIVING} FIGHT ROOMS : {currentSurvivedRoom}/{NB_ROOM_SURVIVING}";
         }
         QuestUpdated();
 

@@ -1,4 +1,3 @@
-using FMODUnity;
 using UnityEngine;
 
 public class HealPotion : Consumable

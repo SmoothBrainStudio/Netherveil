@@ -7,14 +7,14 @@ public class IceAmulet : ItemEffect , IPassiveItem
     int indexInStatus = 0;
     public void OnRetrieved()
     {
-        Hero hero = GameObject.FindWithTag("Player").GetComponent<Hero>();
+        Hero hero = Utilities.Hero;
         indexInStatus = hero.StatusToApply.Count;
         hero.StatusToApply.Add(new Freeze(iceDuration, iceChance));
     }
 
     public void OnRemove()
     {
-        GameObject.FindWithTag("Player").GetComponent<Hero>().StatusToApply.RemoveAt(indexInStatus);
+        Utilities.Hero.StatusToApply.RemoveAt(indexInStatus);
     }
 
 } 

@@ -7,7 +7,7 @@ public class SilverAmethystRing : ItemEffect, IPassiveItem
 
     public void OnRemove()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
+        Hero player = Utilities.Hero;
         player.Stats.DecreaseMaxValue(Stat.HP, maxLifeStat);
         player.Stats.DecreaseValue(Stat.HP, maxLifeStat, true);
         player.Stats.DecreaseValue(Stat.SPEED, speed, false);
@@ -15,7 +15,7 @@ public class SilverAmethystRing : ItemEffect, IPassiveItem
 
     public void OnRetrieved()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
+        Hero player = Utilities.Hero;
         player.Stats.IncreaseMaxValue(Stat.HP, maxLifeStat);
         player.Stats.IncreaseValue(Stat.HP, maxLifeStat, true);
         player.Stats.IncreaseValue(Stat.SPEED, speed, false);

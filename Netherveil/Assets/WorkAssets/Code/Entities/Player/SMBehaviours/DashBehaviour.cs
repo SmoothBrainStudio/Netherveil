@@ -5,7 +5,7 @@ public class DashBehaviour : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        GameObject.FindWithTag("Player").GetComponent<PlayerInput>().StartOfDashAnimation();
+        Utilities.PlayerInput.StartOfDashAnimation();
         Utilities.PlayerController.RemoveCollisionOnDash(stateInfo.length);
     }
 
@@ -14,15 +14,15 @@ public class DashBehaviour : StateMachineBehaviour
     {
         //ensures that player is in state dash during animation
         if(stateInfo.normalizedTime < 1f)
-            GameObject.FindWithTag("Player").GetComponent<Hero>().State = (int)Hero.PlayerState.DASH;
+            Utilities.Hero.State = (int)Hero.PlayerState.DASH;
         else
-            GameObject.FindWithTag("Player").GetComponent<Hero>().State = (int)Hero.PlayerState.MOTIONLESS;
+            Utilities.Hero.State = (int)Hero.PlayerState.MOTIONLESS;
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        GameObject.FindWithTag("Player").GetComponent<PlayerInput>().EndOfDashAnimation();
+        Utilities.PlayerInput.EndOfDashAnimation();
         foreach(var collider in Utilities.PlayerController.CollidersIgnored)
         {
            Physics.IgnoreCollision(Utilities.CharacterController, collider, false);

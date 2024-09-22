@@ -12,16 +12,16 @@ public class DamnationVeil : ISpecialAbility
     {
         CurrentEnergy = Cooldown;
         float planeLength = 5f;
-        radius = (Utilities.Player.GetComponent<PlayerController>().DamnationVeilVFX.GetFloat("Diameter") * planeLength) / 2f;
+        radius = (Utilities.PlayerController.DamnationVeilVFX.GetFloat("Diameter") * planeLength) / 2f;
     }
     public void Activate()
     {
-        PlayerController playerController = Utilities.Player.GetComponent<PlayerController>();
+        PlayerController playerController = Utilities.PlayerController;
         playerController.PlayVFXAtPlayerPos(playerController.DamnationVeilVFX);
         ISpecialAbility.OnSpecialAbilityActivated?.Invoke();
-        AudioManager.Instance.PlaySound(AudioManager.Instance.DamnationVeilSFX, Utilities.Player.transform.position);
+        AudioManager.Instance.PlaySound(AudioManager.Instance.DamnationVeilSFX, playerController.transform.position);
 
-        Physics.OverlapSphere(Utilities.Player.transform.position, radius, LayerMask.GetMask("Entity"))
+        Physics.OverlapSphere(playerController.transform.position, radius, LayerMask.GetMask("Entity"))
             .Select(entity => entity.GetComponent<Mobs>())
             .Where(entity => entity != null)
             .ToList()

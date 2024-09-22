@@ -39,9 +39,9 @@ public class PlayerController : MonoBehaviour
 
     //dash variables
     public List<Collider> CollidersIgnored { get => collidersIgnored; }
-    private List<Collider> collidersIgnored = new List<Collider>();
-    private List<Vector3> ENDPOS = new();
-    private List<Color> color = new() { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.white };
+    private readonly List<Collider> collidersIgnored = new();
+    private readonly List<Vector3> endPos = new();
+    private readonly List<Color> debugColors = new() { Color.red, Color.green, Color.blue, Color.yellow, Color.magenta, Color.white };
     readonly float dashCoef = 2.25f;
 
     //rotate values
@@ -292,8 +292,8 @@ public class PlayerController : MonoBehaviour
         Vector3 baseFinalPos = currentEndPos;
 
         /*  ---- FOR GIZMOS ---
-        ENDPOS.Clear();
-        ENDPOS.Add(currentEndPos);
+        endPos.Clear();
+        endPos.Add(currentEndPos);
         */
 
         // Check if there is a wall on the dash's path
@@ -306,13 +306,13 @@ public class PlayerController : MonoBehaviour
             currentEndPos.y = 0;
 
             /* --- FOR GIZMOS ---
-            ENDPOS.Add(currentEndPos);*/
+            endPos.Add(currentEndPos);*/
         }
 
         Vector3 capsuleBase = this.transform.position;
-        Vector3 capsuleTop = new Vector3(capsuleBase.x, capsuleBase.y + height, capsuleBase.z);
+        Vector3 capsuleTop = new(capsuleBase.x, capsuleBase.y + height, capsuleBase.z);
         List<RaycastHit> hits = Physics.CapsuleCastAll(capsuleBase, capsuleTop, sphereCastSize, playerInput.DashDir, (currentEndPos - this.transform.position).magnitude, LayerMask.GetMask("AvoidDashCollide")).ToList();
-        List<Collider> ToCollide = new List<Collider>();
+        List<Collider> ToCollide = new();
         // For each collider on the dash path
         for (int i = hits.Count - 1; i >= 0; i--)
         {
@@ -335,7 +335,7 @@ public class PlayerController : MonoBehaviour
                 currentEndPos = Vector3.Project(currentEndPos - baseFinalPos, this.transform.position - baseFinalPos) + baseFinalPos;
                 currentEndPos.y = 0;
                 /* --- FOR GIZMOS ---
-                ENDPOS.Add(currentEndPos);
+                endPos.Add(currentEndPos);
                 hits.RemoveAt(i); */
             }
         }
@@ -402,8 +402,6 @@ public class PlayerController : MonoBehaviour
         //used so that it isn't cast from his feet to ensure that there is no ray fail by colliding with spear or ground
         Vector3 rayOffset = Vector3.up / 2;
 
-        bool corruptionNerfApplied = false;
-
         Collider[] tab = PhysicsExtensions.CheckAttackCollideRayCheck(collider, transform.position + rayOffset, "Enemy", LayerMask.GetMask("Map"));
 
         if (tab.Length > 0)
@@ -416,11 +414,6 @@ public class PlayerController : MonoBehaviour
                     {
                         DeviceManager.Instance.ApplyVibrations(0.02f, 0.02f, 0.15f);
                         applyVibrations = false;
-                    }
-                    if (!corruptionNerfApplied)
-                    {
-                        //hero.CorruptionNerf(/*col.gameObject.GetComponent<IDamageable>(), hero*/);
-                        corruptionNerfApplied = true;
                     }
 
                     alreadyAttacked.Add(col);
@@ -474,8 +467,8 @@ public class PlayerController : MonoBehaviour
         if (mouseRaycastPlane.Raycast(ray, out float enter))
         {
             Vector3 hitPoint = ray.GetPoint(enter);
-            hitPoint.y = this.transform.position.y;
-            hitPoint += (hitPoint - this.transform.position).normalized * 50f;
+            hitPoint.y = transform.position.y;
+            hitPoint += (hitPoint - transform.position).normalized * 50f;
 
             float angle = transform.AngleOffsetToFaceTarget(hitPoint);
             angle = System.MathF.Round(angle, 1);
@@ -650,9 +643,9 @@ public class PlayerController : MonoBehaviour
     }
 
     private void PropsClippingSecurity()
-    {
+    {   
         //security to avoid player walking on props
-        if (this.transform.position.y > 0.1f)
+        if (transform.position.y > 0.1f)
         {
             Debug.Log("player security avoid walking on props", this);
             transform.position = new Vector3(transform.position.x, 0f, transform.position.z);
@@ -697,24 +690,24 @@ public class PlayerController : MonoBehaviour
             return;
 
         int i = 0;
-        if (ENDPOS.Count > 0)
+        if (endPos.Count > 0)
         {
-            foreach (var test in ENDPOS)
+            foreach (var test in endPos)
             {
-                Gizmos.color = color[i];
+                Gizmos.color = debugColors[i];
 
                 //Gizmos.DrawSphere(test, 0.5f);
                 i++;
-                i = i == color.Count - 1 ? 0 : i;
+                i = i == debugColors.Count - 1 ? 0 : i;
                 //Gizmos.DrawSphere(test, 0.5f);
                 DrawWireCapsule(test, Quaternion.identity, 0.5f, 1.9f, Gizmos.color);
             }
         }
 
     }
-    public static void DrawWireCapsule(Vector3 _pos, Quaternion _rot, float _radius, float _height, Color _color = default(Color))
+    public static void DrawWireCapsule(Vector3 _pos, Quaternion _rot, float _radius, float _height, Color _color = default)
     {
-        if (_color != default(Color))
+        if (_color != default)
             Handles.color = _color;
         _pos.y += _height / 2;
         Matrix4x4 angleMatrix = Matrix4x4.TRS(_pos, _rot, Handles.matrix.lossyScale);

@@ -20,20 +20,19 @@ public class BelzebuthBelt : ItemEffect, IPassiveItem
 
     public void OnRetrieved()
     {
-        PlayerController player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        player.GetComponent<Hero>().Stats.SetValue(Stat.ATK_RANGE, player.GetComponent<Hero>().Stats.GetValue(Stat.ATK_RANGE) * coefValue);
+        Utilities.Hero.Stats.SetValue(Stat.ATK_RANGE, Utilities.Hero.Stats.GetValue(Stat.ATK_RANGE) * coefValue);
         //divide by 5 because the vfx is based on plane scale size, and -0.2 is to make the arrow perfectly at the spear end pos
-        player.SpearLaunchVFX.SetFloat("VFX Length", player.GetComponent<Hero>().Stats.GetValue(Stat.ATK_RANGE) / 5f - 0.2f);
+        Utilities.PlayerController.SpearLaunchVFX.SetFloat("VFX Length", Utilities.Hero.Stats.GetValue(Stat.ATK_RANGE) / 5f - 0.2f);
 
-        for (int i = 0; i < player.SpearAttacks.Count; ++i)
+        for (int i = 0; i < Utilities.PlayerController.SpearAttacks.Count; ++i)
         {
-            foreach (Collider collider in player.SpearAttacks[i].data)
+            foreach (Collider collider in Utilities.PlayerController.SpearAttacks[i].data)
             {
                 Vector3 scale = collider.gameObject.transform.localScale;
                 scale.z *= coefValue;
 
                 //bad test but right now it's okay
-                if (player.SpearAttacksVFX[i].HasFloat("VFX Size"))
+                if (Utilities.PlayerController.SpearAttacksVFX[i].HasFloat("VFX Size"))
                 {
                     scale.x *= coefValue;
                 }
@@ -42,7 +41,7 @@ public class BelzebuthBelt : ItemEffect, IPassiveItem
             }
         }
 
-        foreach (VisualEffect vfx in player.SpearAttacksVFX)
+        foreach (VisualEffect vfx in Utilities.PlayerController.SpearAttacksVFX)
         {
             if (vfx.HasFloat("Length"))
             {
@@ -57,18 +56,17 @@ public class BelzebuthBelt : ItemEffect, IPassiveItem
 
     public void OnRemove()
     {
-        PlayerController player = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
-        player.GetComponent<Hero>().Stats.SetValue(Stat.ATK_RANGE, player.GetComponent<Hero>().Stats.GetValue(Stat.ATK_RANGE) / coefValue);
+        Utilities.Hero.Stats.SetValue(Stat.ATK_RANGE, Utilities.Hero.Stats.GetValue(Stat.ATK_RANGE) / coefValue);
         //divide by 5 because the vfx is based on plane scale size, and -0.2 is to make the arrow perfectly at the spear end pos
-        player.SpearLaunchVFX.SetFloat("VFX Length", player.GetComponent<Hero>().Stats.GetValue(Stat.ATK_RANGE) / 5f - 0.2f);
+        Utilities.PlayerController.SpearLaunchVFX.SetFloat("VFX Length", Utilities.Hero.Stats.GetValue(Stat.ATK_RANGE) / 5f - 0.2f);
 
-        for (int i = 0; i < player.SpearAttacks.Count; ++i)
+        for (int i = 0; i < Utilities.PlayerController.SpearAttacks.Count; ++i)
         {
-            foreach (Collider collider in player.SpearAttacks[i].data)
+            foreach (Collider collider in Utilities.PlayerController.SpearAttacks[i].data)
             {
                 Vector3 scale = collider.gameObject.transform.localScale;
                 scale.z /= coefValue;
-                if (player.SpearAttacksVFX[i].HasFloat("VFX Size"))
+                if (Utilities.PlayerController.SpearAttacksVFX[i].HasFloat("VFX Size"))
                 {
                     scale.x /= coefValue;
                 }
@@ -77,7 +75,7 @@ public class BelzebuthBelt : ItemEffect, IPassiveItem
             }
         }
 
-        foreach (VisualEffect vfx in player.SpearAttacksVFX)
+        foreach (VisualEffect vfx in Utilities.PlayerController.SpearAttacksVFX)
         {
             if (vfx.HasFloat("Length"))
             {

@@ -11,5 +11,5 @@ public class MerchantCounter : MonoBehaviour
     public readonly byte MAX_PURCHASE = 3;
     public readonly byte PURCHASE_STEP_AUGMENTATION = 10;
 
-    public Color Color => new Color(0.62f, 0.34f, 0.76f, 1.0f);
+    public Color Color => new(0.62f, 0.34f, 0.76f, 1.0f);
 }

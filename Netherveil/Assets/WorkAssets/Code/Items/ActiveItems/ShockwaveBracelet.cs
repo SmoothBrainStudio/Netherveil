@@ -15,7 +15,7 @@ public class ShockwaveBracelet : ItemEffect, IActiveItem
 
     public void Activate()
     {
-        Hero hero = GameObject.FindWithTag("Player").GetComponent<Hero>();
+        Hero hero = Utilities.Hero;
         GameObject shockwaveCollider = GameObject.Instantiate(GameResources.Get<GameObject>("ShockwaveBraceletCollide"));
         GameObject shockwaveVFX = GameObject.Instantiate(GameResources.Get<GameObject>("VFX_ShockWaveTank"));
         shockwaveCollider.SetActive(false);

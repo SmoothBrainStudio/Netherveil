@@ -7,13 +7,12 @@ public class BleedingRing : ItemEffect, IPassiveItem
     int indexInStatus = 0;
     public void OnRetrieved()
     {
-        Hero hero = GameObject.FindWithTag("Player").GetComponent<Hero>();
-        indexInStatus = hero.StatusToApply.Count;
-        hero.StatusToApply.Add(new Bleeding(bleedingDuration, bleedingChance));
+        indexInStatus = Utilities.Hero.StatusToApply.Count;
+        Utilities.Hero.StatusToApply.Add(new Bleeding(bleedingDuration, bleedingChance));
     }
 
     public void OnRemove()
     {
-        GameObject.FindWithTag("Player").GetComponent<Hero>().StatusToApply.RemoveAt(indexInStatus);
+        Utilities.Hero.StatusToApply.RemoveAt(indexInStatus);
     }
 } 

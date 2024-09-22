@@ -1,4 +1,3 @@
-using Fountain;
 using UnityEngine;
 
 public class MerchantCounterInteraction : MonoBehaviour, IInterractable

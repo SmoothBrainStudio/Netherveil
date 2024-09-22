@@ -263,7 +263,7 @@ public class Hero : Entity, IDamageable, IAttacker, IBlastable, ISavable
 
 
     /// <summary>
-    /// used to apply the damocles sword effect when player is equal to or above 50% corruption
+    /// applies the damocles sword effect when player is equal to or above 50% corruption
     /// </summary>
     /// <param name="damageable"></param>
     /// <param name="attacker"></param>

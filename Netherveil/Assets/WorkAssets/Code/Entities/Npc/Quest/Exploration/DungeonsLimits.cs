@@ -40,7 +40,7 @@ public class DungeonsLimits : Quest
 
         currentNumber = (int)((float)MapUtilities.NbEnterRoom / MapUtilities.NbRoom * 100f);
 
-        progressText = $"EXPLORE THIS FLOOR : {currentNumber}%/{COMPLETION_POURCENTAGE} %";
+        progressText = $"EXPLORE THIS FLOOR : {currentNumber}%/{COMPLETION_POURCENTAGE}%";
         MapUtilities.onEarlyFirstEnter += UpdateCount;
         MapUtilities.onFinishStage += LoseQuest;
         UpdateCount();
@@ -69,7 +69,7 @@ public class DungeonsLimits : Quest
         if (!IsQuestFinished())
         {
             currentNumber = (int)((float)MapUtilities.NbEnterRoom / MapUtilities.NbRoom * 100f);
-            progressText = $"EXPLORE THIS FLOOR : {currentNumber}%/{COMPLETION_POURCENTAGE} %";
+            progressText = $"EXPLORE THIS FLOOR : {currentNumber}%/{COMPLETION_POURCENTAGE}%";
         }
 
         QuestUpdated();

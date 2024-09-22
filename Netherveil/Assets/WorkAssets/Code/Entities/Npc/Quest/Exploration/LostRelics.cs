@@ -59,7 +59,7 @@ public class LostRelics : Quest
         if (!IsQuestFinished() && (MapUtilities.currentRoomData.Type == RoomType.Treasure || MapUtilities.currentRoomData.Type == RoomType.Merchant))
         {
             currentNumber = MapUtilities.nbEnterRoomByType[RoomType.Treasure] + MapUtilities.nbEnterRoomByType[RoomType.Merchant];
-            progressText = $"NB TREASURE ROOM DISCOVERED : {currentNumber}/{MAX_NUMBER}";
+            progressText = $"NB TREASURE/SHOP ROOM DISCOVERED : {currentNumber}/{MAX_NUMBER}";
         }
         QuestUpdated();
     }

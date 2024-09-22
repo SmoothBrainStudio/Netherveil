@@ -11,8 +11,8 @@ public class HornOfBarbatos : ItemEffect, IActiveItem
     private readonly float increaseValue = 0.2f;
     private readonly float displayValue;
 #pragma warning restore IDE0052 // Supprimer les membres privés non lus
-    List<float> changesList = new List<float>();
-    private List<Stat> statToChange = new List<Stat>()
+    readonly List<float> changesList = new List<float>();
+    private readonly List<Stat> statToChange = new List<Stat>()
     {
         Stat.ATK,
         Stat.SPEED,

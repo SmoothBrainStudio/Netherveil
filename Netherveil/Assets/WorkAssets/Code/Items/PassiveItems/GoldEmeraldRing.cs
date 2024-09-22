@@ -6,7 +6,7 @@ public class GoldEmeraldRing : ItemEffect, IPassiveItem
     private readonly int healthIncrease = 25;
     public void OnRemove()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
+        Hero player = Utilities.Hero;
         player.Stats.DecreaseValue(Stat.ATK, attackStat, false);
         player.Stats.DecreaseMaxValue(Stat.HP, healthIncrease);
         player.Stats.DecreaseValue(Stat.HP, healthIncrease);
@@ -18,7 +18,7 @@ public class GoldEmeraldRing : ItemEffect, IPassiveItem
 
     public void OnRetrieved()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
+        Hero player = Utilities.Hero;
         player.Stats.IncreaseValue(Stat.ATK, attackStat, false);
         player.Stats.IncreaseMaxValue(Stat.HP, healthIncrease);
         player.Stats.IncreaseValue(Stat.HP, healthIncrease);

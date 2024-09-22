@@ -8,7 +8,7 @@ public class MerchantCounterDisplay : MonoBehaviour
     [SerializeField] private RectTransform rectTransform;
     [SerializeField] private TMP_Text displayTextMesh;
     private Coroutine displayRoutine;
-    private float displayDuration = 0.2f;
+    private readonly float displayDuration = 0.2f;
     private float originalSize;
     private float iconSize;
 

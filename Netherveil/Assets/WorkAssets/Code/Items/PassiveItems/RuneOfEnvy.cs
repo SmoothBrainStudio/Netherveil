@@ -98,7 +98,7 @@ public class RuneOfEnvy : ItemEffect, IPassiveItem
         }
 
 
-        Hero hero = GameObject.FindWithTag("Player").GetComponent<Hero>();
+        Hero hero = Utilities.Hero;
 
         foreach (float statStolen in statsStolen[(int)StolenStats.HP])
         {

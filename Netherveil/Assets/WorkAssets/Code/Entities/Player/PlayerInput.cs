@@ -19,7 +19,6 @@ public class PlayerInput : MonoBehaviour
     HitMaterialApply flashMaterial;
     CameraUtilities cameraUtilities;
     PlayerInteractions playerInteractions;
-    DialogueTreeRunner dialogueTreeRunner;
     UnityEngine.InputSystem.PlayerInput playerInputMap;
 
     public event Action<Vector3> OnThrowSpear;
@@ -74,7 +73,6 @@ public class PlayerInput : MonoBehaviour
         playerInteractions = GetComponent<PlayerInteractions>();
         animator = GetComponentInChildren<Animator>();
         cameraUtilities = Camera.main.GetComponent<CameraUtilities>();
-        dialogueTreeRunner = FindObjectOfType<DialogueTreeRunner>();
         flashMaterial = GetComponent<HitMaterialApply>();
     }
 

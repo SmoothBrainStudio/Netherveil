@@ -8,13 +8,11 @@ public class Bramble : ItemEffect, IPassiveItem
 
     public void OnRemove()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
-        player.Stats.DecreaseValue(Stat.ATK, attackStat, false);
+        Utilities.Hero.Stats.DecreaseValue(Stat.ATK, attackStat, false);
     }
 
     public void OnRetrieved()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
-        player.Stats.IncreaseValue(Stat.ATK, attackStat, false);
+        Utilities.Hero.Stats.IncreaseValue(Stat.ATK, attackStat, false);
     }
 }

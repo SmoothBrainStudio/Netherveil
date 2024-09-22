@@ -6,13 +6,11 @@ public class BootOfSwiftness : ItemEffect, IPassiveItem
 
     public void OnRemove()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
-        player.Stats.DecreaseValue(Stat.SPEED, speedStat, false);
+        Utilities.Hero.Stats.DecreaseValue(Stat.SPEED, speedStat, false);
     }
 
     public void OnRetrieved()
     {
-        Hero player = GameObject.FindGameObjectWithTag("Player").GetComponent<Hero>();
-        player.Stats.IncreaseValue(Stat.SPEED, speedStat, false);
+        Utilities.Hero.Stats.IncreaseValue(Stat.SPEED, speedStat, false);
     }
 }

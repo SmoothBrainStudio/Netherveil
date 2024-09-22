@@ -19,8 +19,8 @@ public class DivineShield : ISpecialAbility
     public void Activate()
     {
         ISpecialAbility.OnSpecialAbilityActivated?.Invoke();
-        PlayerController playerController = Utilities.Player.GetComponent<PlayerController>();
-        playerController.DivineShieldVFX.SetFloat("Duration", Utilities.PlayerController.DIVINE_SHIELD_DURATION);
+        PlayerController playerController = Utilities.PlayerController;
+        playerController.DivineShieldVFX.SetFloat("Duration", playerController.DIVINE_SHIELD_DURATION);
         playerController.DivineShieldVFX.Play();
         playerController.SpecialAbilityCoroutine = playerController.StartCoroutine(DisableDivineShield());
         Utilities.Hero.IsInvincibleCount++;
@@ -35,8 +35,8 @@ public class DivineShield : ISpecialAbility
             currentTime += Time.deltaTime;
             yield return null;
         }
-        Utilities.Player.GetComponent<PlayerController>().SpecialAbilityCoroutine = null;
-        Utilities.Player.GetComponent<PlayerController>().DivineShieldVFX.Stop();
+        Utilities.PlayerController.SpecialAbilityCoroutine = null;
+        Utilities.PlayerController.DivineShieldVFX.Stop();
         AudioManager.Instance.StopSound(loopSound, STOP_MODE.ALLOWFADEOUT);
         currentTime = 0f;
         Utilities.Hero.IsInvincibleCount--;
